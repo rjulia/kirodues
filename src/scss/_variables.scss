@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Lobster&display=swap');
+@import './mediaqueries';
+// fonts
+$title: 'Lobster',
+cursive;
+$text: 'Belgrano',
+serif;
+
+//metrics
+
+$container: 1270px;
+
+
+$primary: #781557;
+$secondary: #22693c;
+$bg_light:#fffbef;
+$text_color:#292929;
+$white: #fff;
+$black: #000;
+$alert:#D80027;
+$yellow:#FFDA44;
+$light-grey: #f2f2f2;
+
+// SIZES
+$font_title: 22px;
+$font_text: 14px;
+$font_card_home: 16px;
+
+
+// Z-INDEX
+$home-image: -1;
+$card-text: 10;
+$cookies: 1000;
+
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1270px) !default;
+
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px) !default;
