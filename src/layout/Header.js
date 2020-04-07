@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import Logo from "../assets/images/kirodues_log-300x113.jpg";
-import { NavLink as Link, useLocation, } from "react-router-dom";
+import { NavLink as Link, } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 
@@ -47,9 +47,9 @@ const Header = () => {
         <div className="header__menu--social-media">
           <ul>
             <li>
-              <a href=""><FaFacebookF size={15} /></a>
-              <a href=""><FaTwitter size={15} /></a>
-              <a href=""><FaInstagram size={15} /></a>
+              <a href="https://www.facebook.com/KiroDues-1157150637669356/" target="_blank" rel="noopener noreferrer"><FaFacebookF size={15} /></a>
+              <a href="https://twitter.com/KiroDues" target="_blank" rel="noopener noreferrer"><FaTwitter size={15} /></a>
+              <a href="https://www.instagram.com/kirodues/" target="_blank" rel="noopener noreferrer"><FaInstagram size={15} /></a>
             </li>
           </ul>
         </div>
