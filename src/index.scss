@@ -7,3 +7,14 @@
 body {
   font-family: $text;
 }
+
+ul,
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
