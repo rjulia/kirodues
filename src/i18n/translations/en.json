@@ -1,57 +1,61 @@
 {
   "menu": {
-    "aboutus":"ABOUT US",
-    "discount_packs":"DISCOUNT PACKS",
-    "treatments":"TREATMENTS",
-    "collaborators":"COLLABORATORS",
-    "contact":"CONTACT"
+    "aboutus": "ABOUT US",
+    "discount_packs": "DISCOUNT PACKS",
+    "treatments": "TREATMENTS",
+    "collaborators": "COLLABORATORS",
+    "contact": "CONTACT"
   },
-  "home":{
+  "home": {
     "first_block": {
       "title": "Welcome to KiroDues in Barcelona, massage center and naturopathy",
-      "content":"The KiroDues center was born thanks to the passion and curiosity of its founders for the art of massage and the different holistic and alternative techniques. Through the fusion of anatomical-physiological, energetic and emotional knowledge allows us to find the most suitable combination for each person and thus get to restore the physical-emotional balance.",
-      "button":"See More"
+      "content": "The KiroDues center was born thanks to the passion and curiosity of its founders for the art of massage and the different holistic and alternative techniques. Through the fusion of anatomical-physiological, energetic and emotional knowledge allows us to find the most suitable combination for each person and thus get to restore the physical-emotional balance.",
+      "button": "See More"
     },
-    "second_block":{
-      "title":"Naturopathy and Wellness Treatments in Barcelona",
-      "button":"See Treatments"
+    "second_block": {
+      "title": "Naturopathy and Wellness Treatments in Barcelona",
+      "button": "See Treatments",
+      "treatment": "treatments",
+      "massage": "massage",
+      "osteo": "osteopathy",
+      "ayurvera": "AYURVEDA TECHNIQUE"
     },
-    "third_block":{
-      "title":"What they think about KiroDues"
+    "third_block": {
+      "title": "What they think about KiroDues"
     },
-    "fourth_block":{
-      "title":"Gift CARD",
-      "content":"Offer someone a unique experience gift, we make special gift cards.Body rituals, wrapping massages, ayurveda treatments, hot stone massage, decontracting treatments ... Contact us and we will advise you"
+    "fourth_block": {
+      "title": "Gift CARD",
+      "content": "Offer someone a unique experience gift, we make special gift cards.Body rituals, wrapping massages, ayurveda treatments, hot stone massage, decontracting treatments ... Contact us and we will advise you"
     }
   },
-  "footer":{
-    "contact_us":"Contact us",
-    "visit_us":"Visit us",
-    "privacy":"PRIVACY",
-    "cookies":"COOKIES",
-    "legal":"LEGAL"
+  "footer": {
+    "contact_us": "Contact us",
+    "visit_us": "Visit us",
+    "privacy": "PRIVACY",
+    "cookies": "COOKIES",
+    "legal": "LEGAL"
   },
-  "discount_pack":{
-    "title":"Discount pack",
-    "content":"Naturopathy and Wellness in Barcelona",
-    "price":"Total price without discount: 260 €"
+  "discount_pack": {
+    "title": "Discount pack",
+    "content": "Naturopathy and Wellness in Barcelona",
+    "price": "Total price without discount: 260 €"
   },
-  "treaatments":{
-    "title":"Treatments",
-    "content":"Naturopathy and Wellness in Barcelona",
-    "button":"Discount Pack"
+  "treaatments": {
+    "title": "Treatments",
+    "content": "Naturopathy and Wellness in Barcelona",
+    "button": "Discount Pack"
   },
-  "collaborators":{
-    "title":"Collaborators"
+  "collaborators": {
+    "title": "Collaborators"
   },
-  "contact":{
-    "title":"KiroDues",
-    "content":"Naturopathy Center",
-    "button_map":"See Map",
-    "first_field":"Name (required)",
-    "second_field":"Email (required)",
-    "third_field":"Subject",
-    "fouth_field":"Message",
-    "button_send":"Send"
+  "contact": {
+    "title": "KiroDues",
+    "content": "Naturopathy Center",
+    "button_map": "See Map",
+    "first_field": "Name (required)",
+    "second_field": "Email (required)",
+    "third_field": "Subject",
+    "fouth_field": "Message",
+    "button_send": "Send"
   }
 }

@@ -1,57 +1,61 @@
 {
   "menu": {
-    "aboutus":"QUIENES SOMOS",
-    "discount_packs":"PACK DESCUENTO",
-    "treatments":"TRATAMIENTOS",
-    "collaborators":"COLABORADORES",
-    "contact":"CONTACTO"
+    "aboutus": "QUIENES SOMOS",
+    "discount_packs": "PACK DESCUENTO",
+    "treatments": "TRATAMIENTOS",
+    "collaborators": "COLABORADORES",
+    "contact": "CONTACTO"
   },
-  "home":{
+  "home": {
     "first_block": {
       "title": "Bienvenidos a KiroDues en Barcelona, centro de masajes y naturopatía",
-      "content":"El centro KiroDues nació gracias a la pasión y curiosidad de sus fundadoras por el arte del masaje y las diferentes técnicas holísticas y alternativas. A través de la fusión de los conocimientos anatómicos-fisiológicos, energéticos y emocionales nos permite encontrar la combinación más adecuada para cada persona y así llegar a restablecer el equilibrio físico-emocional.",
-      "button":"Ver Más"
+      "content": "El centro KiroDues nació gracias a la pasión y curiosidad de sus fundadoras por el arte del masaje y las diferentes técnicas holísticas y alternativas. A través de la fusión de los conocimientos anatómicos-fisiológicos, energéticos y emocionales nos permite encontrar la combinación más adecuada para cada persona y así llegar a restablecer el equilibrio físico-emocional.",
+      "button": "Ver Más"
     },
-    "second_block":{
-      "title":"Tratamientos Naturopatía y Wellnes en Barcelona",
-      "button":"Ver Tratamientos"
+    "second_block": {
+      "title": "Tratamientos Naturopatía y Wellnes en Barcelona",
+      "button": "Ver Tratamientos",
+      "treatment": "Tratamientos",
+      "massage": "masajes",
+      "osteo": "Osteopatía",
+      "ayurvera": "TÉCNICA AYURVEDA"
     },
-    "third_block":{
-      "title":"Lo que opinan de KiroDues"
+    "third_block": {
+      "title": "Lo que opinan de KiroDues"
     },
-    "fourth_block":{
-      "title":"Tarjeta REGALO",
-      "content":"Regala una experiencia única, hacemos tarjetas especiales para regalar tratamientos:Rituales corporales, masajes con envolturas, tratamientos ayurveda, masaje con piedras calientes, tratamientos descontracturantes... Contacta con nosotros y te asesoraremos!"
+    "fourth_block": {
+      "title": "Tarjeta REGALO",
+      "content": "Regala una experiencia única, hacemos tarjetas especiales para regalar tratamientos:Rituales corporales, masajes con envolturas, tratamientos ayurveda, masaje con piedras calientes, tratamientos descontracturantes... Contacta con nosotros y te asesoraremos!"
     }
   },
-  "footer":{
-    "contact_us":"Llámanos",
-    "visit_us":"Visítanos",
-    "privacy":"PRIVACIDAD",
-    "cookies":"USO DE COOKIES",
-    "legal":"AVISO LEGAL"
+  "footer": {
+    "contact_us": "Llámanos",
+    "visit_us": "Visítanos",
+    "privacy": "PRIVACIDAD",
+    "cookies": "USO DE COOKIES",
+    "legal": "AVISO LEGAL"
   },
-  "discount_pack":{
-    "title":"Packs con DESCUENTO",
-    "content":"Naturopatia y Wellnes Barcelona",
-    "price":"Precio sin descuento 260 €"
+  "discount_pack": {
+    "title": "Packs con DESCUENTO",
+    "content": "Naturopatia y Wellnes Barcelona",
+    "price": "Precio sin descuento 260 €"
   },
-  "treaatments":{
-    "title":"Tratamientos",
-    "content":"Naturopatia y Wellnes Barcelona",
-    "button":"Pack Descuento"
+  "treaatments": {
+    "title": "Tratamientos",
+    "content": "Naturopatia y Wellnes Barcelona",
+    "button": "Pack Descuento"
   },
-  "collaborators":{
-    "title":"Colaboradores"
+  "collaborators": {
+    "title": "Colaboradores"
   },
-  "contact":{
-    "title":"KiroDues",
-    "content":"Centro de Naturopatia",
-    "button_map":"Ver Mapa",
-    "first_field":"Nombre (requerido)",
-    "second_field":"Email (requerido)",
-    "third_field":"Asunto",
-    "fouth_field":"Su mensaje",
-    "button_send":"Enviar"
+  "contact": {
+    "title": "KiroDues",
+    "content": "Centro de Naturopatia",
+    "button_map": "Ver Mapa",
+    "first_field": "Nombre (requerido)",
+    "second_field": "Email (requerido)",
+    "third_field": "Asunto",
+    "fouth_field": "Su mensaje",
+    "button_send": "Enviar"
   }
 }

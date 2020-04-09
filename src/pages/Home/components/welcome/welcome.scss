@@ -13,11 +13,17 @@
     width: 600px;
     font-weight: 300;
     font-family: $text;
+    margin-bottom: 20px;
+    line-height: 45px;
   }
 
   p {
     font-size: 16px;
     font-family: $aux;
+    line-height: 24px;
+    font-weight: 300;
+    color: $text_grey;
+    margin-bottom: 40px;
   }
 
   .welcome__logo {
@@ -26,7 +32,7 @@
     justify-content: center;
 
     img {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
 
   }

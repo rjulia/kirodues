@@ -1,10 +1,16 @@
 @import '../../scss/variables';
 
-.button {
+.btn {
   color: $white;
   padding: 15px 40px;
   font-family: $title;
   font-size: 36px;
   background-color: $primary;
   border-radius: 80px;
+
+  &.btn-small {
+    padding: 0 30px;
+    font-size: 22px;
+    line-height: 46px;
+  }
 }
