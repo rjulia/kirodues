@@ -16,10 +16,10 @@ const HeroImage = () => {
           strength={500}
         >
 
-          <div className="hero-image__container" style={{ height: 'calc(100vh - 100px)' }} >
+          <div className="hero-image__container">
             <div className="hero-image__content">
               <p>Descubre un nuevo centro de salud y bienestar en Barcelona</p>
-              <Button />
+              <Button text={'Reserva cita'} />
             </div>
           </div>
         </Parallax>

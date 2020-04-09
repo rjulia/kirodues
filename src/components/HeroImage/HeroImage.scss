@@ -1,1 +1,20 @@
-.hero-image {}
+@import '../../scss/variables';
+
+.hero-image {
+
+
+  .hero-image__container {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      font-size: 60px;
+      color: $white;
+      font-weight: 300;
+      max-width: 950px;
+    }
+  }
+}
