@@ -1,4 +1,5 @@
 import React from 'react'
+import { withTranslation, useTranslation } from 'react-i18next';
 import './Header.scss'
 import Logo from "../assets/images/kirodues_log-300x113.jpg";
 import { NavLink as Link, } from "react-router-dom";
@@ -6,6 +7,11 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 
 const Header = () => {
+  const { i18n, t } = useTranslation();
+
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <nav className="header__container container-fluid">
 
@@ -20,29 +26,34 @@ const Header = () => {
           <ul>
             <li>
               <Link to="/nosotros">
-                About us
+                {t('menu.aboutus')}
+              </Link>
+            </li>
+            <li>
+              <Link to="/packs">
+                {t('menu.discount_packs')}
               </Link>
             </li>
             <li>
               <Link to="/tratamientos">
-                Tatamientos
+                {t('menu.treatments')}
               </Link>
             </li>
             <li>
               <Link to="/colaboradores">
-                colaboradores
+                {t('menu.collaborators')}
               </Link>
             </li>
             <li>
               <Link to="/colaboradores">
-                Contacto
+                {t('menu.contact')}
               </Link>
             </li>
 
           </ul>
         </div>
         <div className="header__menu--language">
-          <span>ES</span> | <span>EN</span>
+          <span onClick={() => changeLanguage('es')}>ES</span> | <span onClick={() => changeLanguage('en')}>EN</span>
         </div>
         <div className="header__menu--social-media">
           <ul>
@@ -58,4 +69,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default withTranslation()(Header)

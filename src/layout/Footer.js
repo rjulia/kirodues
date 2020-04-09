@@ -1,22 +1,26 @@
 import React from 'react'
 import "./Footer.scss"
+import { withTranslation, useTranslation } from 'react-i18next';
+
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 import Logo from "../assets/images/kirodues_centro_de_naturopatia_barcelona_salud_bienestar_transparente.png";
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="container-fluid footer__container">
       <div className="container">
         <div className="row footer__box-links">
           <div className="col-12 col-md-4">
-            <h2>Llamanos</h2>
+            <h2>{t('footer.contact_us')}</h2>
             <span className="tel">
               627 907 876
               </span>
             <a href="mailto:info@kirodues.es">info@kirodues.es</a>
           </div>
           <div className="col-12 col-md-4">
-            <h2>Visitanos</h2>
+            <h2>{t('footer.visit_us')}</h2>
             <span className="address">
               Calle Mare de Deu del Pilar 12 <br />
               08003 Barcelona
@@ -45,9 +49,9 @@ const Footer = () => {
         </div>
         <div className="footer__box-legal">
           <ul>
-            <li>PRIVACIDAD</li> |
-            <li>USO DE COOKIES</li> |
-            <li>AVISO LEGAL</li>
+            <li>{t('footer.privacy')}</li> |
+            <li>{t('footer.cookies')}</li> |
+            <li>{t('footer.legal')}</li>
           </ul>
         </div>
       </div>
@@ -55,4 +59,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default withTranslation()(Footer)
