@@ -1,0 +1,34 @@
+@import '../../../../scss/variables';
+
+
+.welcome {
+  min-height: calc(100vh - 545px);
+  background-color: #fffbef;
+  padding: 140px 0;
+  display: flex;
+
+  h3 {
+    color: $secondary;
+    font-size: 40px;
+    width: 600px;
+    font-weight: 300;
+    font-family: $text;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: $aux;
+  }
+
+  .welcome__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      transform: scale(1.5);
+    }
+
+  }
+
+}
