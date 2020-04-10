@@ -1,0 +1,51 @@
+@import '../../scss/variables';
+
+.comment {
+  display: flex;
+  flex-direction: column;
+
+  .comment__icon--box {
+    margin-bottom: 20px;
+    text-align: center;
+
+    span {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      overflow: visible;
+      font: inherit;
+      color: $primary;
+      text-transform: none;
+      padding: 0;
+      background-color: transparent;
+      display: inline-block;
+      fill: currentcolor;
+      line-height: 0;
+
+      svg {}
+
+    }
+  }
+
+  .comment__content--box {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    font-style: italic;
+    padding: 0 0 0 40px;
+    color: $secondary;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    border-left: 2px solid $primary;
+
+    .comment__footer {
+      margin-top: 10px;
+      font-size: 11px;
+      line-height: 1.5;
+      color: $text_grey;
+      font-family: 'Work Sans';
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}

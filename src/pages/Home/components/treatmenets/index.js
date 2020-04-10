@@ -6,6 +6,7 @@ import Osteopatia from "assets/images/kirodues_osteopatia-1.jpg";
 import Masajes from "assets/images/kirodues_spa_barcelona_masajes.jpg";
 import Spa from "assets/images/kirodues_tratamientos_spa.jpg";
 import Ayurvera from "assets/images/kirodues_tratamientos_pindas-tibet.jpg";
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,7 +37,9 @@ const Treatments = () => {
         </div>
       </div>
       <div className="treatments__button--box">
-        <Button small text={t('home.second_block.button')} />
+        <Link to="/tratamientos">
+          <Button small text={t('home.second_block.button')} />
+        </Link>
       </div>
     </div>
   )
