@@ -14,4 +14,13 @@ const getComments = (language) =>
     })
     .then(response => response.items)
 
-export { getComments }
+const getReviews = (language) =>
+  client
+    .getEntries({
+      content_type: 'mediaReview',
+      locale: language,
+      order: 'sys.createdAt'
+    })
+    .then(response => response.items)
+
+export { getComments, getReviews }

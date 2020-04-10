@@ -1,0 +1,42 @@
+@import '../../scss/variables';
+
+.about {
+  min-height: calc(100vh - 100px);
+
+  .about__content {
+    padding: 100px 50px;
+
+    p {
+      font-family: $karla;
+      font-weight: 300;
+      color: $text_grey;
+      line-height: 24px;
+      font-size: 16px;
+
+      br {
+        display: block;
+        margin: 20px 0;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .about__title-reviews {
+    background-color: $secondary;
+    padding: 70px 0;
+    text-align: center;
+
+    h3 {
+      font-size: 40px;
+      font-weight: 300;
+      color: $white;
+    }
+  }
+
+  .about_content-reviews {
+    padding: 70px 0;
+  }
+}

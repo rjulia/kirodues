@@ -35,6 +35,11 @@
     "cookies": "COOKIES",
     "legal": "LEGAL"
   },
+  "about": {
+    "title": "Who are we",
+    "text": "KiroDues is a friendly and reliable Team with extensive professional training and experience.<br><br> With a Client focused approached we offer you a wide range of high quality treatments at affordable prices. <br><br> We would love to introduce you to the wide range of treatments we offer and we are sure you will be able to find what you have been looking for.<br><br> The main goal for us at KiroDues is to be able to satisfy the needs of our Clients. Our strenghts are our extensive experience and the attention we pay to our Clients.",
+    "opinion": "They speak about us in the web"
+  },
   "discount_pack": {
     "title": "Discount pack",
     "content": "Naturopathy and Wellness in Barcelona",

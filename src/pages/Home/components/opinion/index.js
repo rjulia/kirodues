@@ -22,7 +22,7 @@ const Opinion = ({ i18n }) => {
       })
 
   }, [])
-  console.log(comments)
+
   if (isLoading) return <Spinner />
   return (
     <div className="opinion">
