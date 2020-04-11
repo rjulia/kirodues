@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { withTranslation, useTranslation } from 'react-i18next';
 import './packs.scss'
-import { Title, Spinner, Pack, BlockTitle } from 'components'
+import { Spinner, Pack, BlockTitle } from 'components'
 import { getPacks } from '../../services/contenful'
 
 const Packs = ({ i18n }) => {
