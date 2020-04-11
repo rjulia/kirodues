@@ -4,6 +4,8 @@ export { default as Title } from './Title/Title';
 export { default as Comment } from './Comment/Comment';
 export { default as Spinner } from './Spinner/Spinner';
 export { default as Review } from './Review/Review';
+export { default as Pack } from './Pack/Pack';
+
 
 
 

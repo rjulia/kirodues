@@ -1,10 +1,10 @@
 {
   "menu": {
-    "aboutus": "QUIENES SOMOS",
-    "discount_packs": "PACK DESCUENTO",
-    "treatments": "TRATAMIENTOS",
-    "collaborators": "COLABORADORES",
-    "contact": "CONTACTO"
+    "aboutus": "Quienes somos",
+    "discount_packs": "Pack descuento",
+    "treatments": "Tratamientos",
+    "collaborators": "Colaboradores",
+    "contact": "Contacto"
   },
   "home": {
     "first_block": {
@@ -43,7 +43,7 @@
   "discount_pack": {
     "title": "Packs con DESCUENTO",
     "content": "Naturopatia y Wellnes Barcelona",
-    "price": "Precio sin descuento 260 €"
+    "price": "Precio sin descuento {{value}} €"
   },
   "treaatments": {
     "title": "Tratamientos",

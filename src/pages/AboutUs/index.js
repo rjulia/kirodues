@@ -5,8 +5,7 @@ import { getReviews } from '../../services/contenful'
 import AboutImg from "../../assets/images/kirodues_quienes_somos.jpg";
 import './aboutus.scss'
 import { Title, Spinner, Review } from 'components';
-
-
+import { Helmet } from 'react-helmet';
 
 const AboutUs = ({ i18n }) => {
 
@@ -25,10 +24,14 @@ const AboutUs = ({ i18n }) => {
       })
 
   }, [])
-  console.log(reviews)
+
   if (isLoading) return <Spinner />
   return (
     <div className="about">
+      <Helmet>
+        <title>Kirodues - Home</title>
+        <meta name="description" content="EL mejor tratamiento para tu espalda" />
+      </Helmet>
       <div className="container">
         <div className="row about__content">
           <div className="col-12 col-md-6">

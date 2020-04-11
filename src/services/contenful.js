@@ -23,4 +23,14 @@ const getReviews = (language) =>
     })
     .then(response => response.items)
 
-export { getComments, getReviews }
+
+const getPacks = (language) =>
+  client
+    .getEntries({
+      content_type: 'discountPacks',
+      locale: language,
+      order: 'sys.createdAt'
+    })
+    .then(response => response.items)
+
+export { getComments, getReviews, getPacks }

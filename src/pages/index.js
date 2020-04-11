@@ -6,5 +6,7 @@ export { default as Contact } from './Contact';
 export { default as Treatment } from './Treatment';
 export { default as Treatments } from './Treatments';
 export { default as NoFound } from './NoFound';
+export { default as Packs } from './Packs';
+
 
 

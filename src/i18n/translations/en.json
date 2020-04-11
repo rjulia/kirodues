@@ -1,10 +1,10 @@
 {
   "menu": {
-    "aboutus": "ABOUT US",
-    "discount_packs": "DISCOUNT PACKS",
-    "treatments": "TREATMENTS",
-    "collaborators": "COLLABORATORS",
-    "contact": "CONTACT"
+    "aboutus": "About us",
+    "discount_packs": "Discount packs",
+    "treatments": "Treatments",
+    "collaborators": "Collaborators",
+    "contact": "Contact"
   },
   "home": {
     "first_block": {
@@ -43,7 +43,7 @@
   "discount_pack": {
     "title": "Discount pack",
     "content": "Naturopathy and Wellness in Barcelona",
-    "price": "Total price without discount: 260 €"
+    "price": "Total price without discount: {{value}} €"
   },
   "treaatments": {
     "title": "Treatments",

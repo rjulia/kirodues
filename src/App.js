@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import { HeaderMobile, MenuMobile, Header, Footer } from "./layout";
-import { Home, AboutUs, Collaborator, Collaborators, Contact, Treatment, Treatments, NoFound } from "./pages";
+import { Home, AboutUs, Collaborator, Collaborators, Contact, Treatment, Treatments, NoFound, Packs } from "./pages";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={() => <Home />} />
           <Route exact path="/nosotros" component={AboutUs} />
+          <Route exact path="/packs" component={Packs} />
           <Route exact path="/colaboradores/:slug" component={Collaborator} />
           <Route exact path="/colaboradores/" component={Collaborators} />
           <Route exact path="/tratamientos/:slug" component={Treatment} />
