@@ -1,0 +1,13 @@
+.collaborators {
+  text-align: center;
+
+  .collaborators__grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding-bottom: 70px;
+  }
+
+}

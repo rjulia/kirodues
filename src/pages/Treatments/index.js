@@ -36,7 +36,7 @@ const Treatments = () => {
               <BoxImage
                 key={treatment.sys.id}
                 title={_.get(treatment, 'fields.nameTreatment')}
-                slug={_.get(treatment, 'fields.slug')}
+                slug={`tratamientos/${_.get(treatment, 'fields.slug')}`}
                 thumbnail={_.get(treatment, 'fields.thumbnail.fields')}
               />))
           }

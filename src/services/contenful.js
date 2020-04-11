@@ -59,5 +59,24 @@ const getTreatment = (language, slug) =>
     })
     .then(response => response.items)
 
+const getCollaborators = (language) =>
+  client
+    .getEntries({
+      content_type: 'collaborator',
+      locale: language,
+      order: 'fields.nameCollaborator',
+      select: 'sys.id,fields.slug,fields.image,fields.nameCollaborator'
+    })
+    .then(response => response.items)
 
-export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment }
+const getCollaborator = (language, slug) =>
+  client
+    .getEntries({
+      'fields.slug': slug,
+      content_type: 'collaborator',
+      locale: language
+    })
+    .then(response => response.items)
+
+
+export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment, getCollaborators, getCollaborator }
