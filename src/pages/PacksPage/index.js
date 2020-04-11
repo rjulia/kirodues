@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { withTranslation, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import './packs.scss'
 import { Spinner, Pack, BlockTitle } from '../../components'
 import { getPacks } from '../../services/contenful'

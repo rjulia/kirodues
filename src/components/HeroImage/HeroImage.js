@@ -2,24 +2,28 @@ import React from 'react'
 import { Parallax } from 'react-parallax';
 import './HeroImage.scss'
 import { Button } from 'components/';
+import { Link } from 'react-router-dom';
 
 
-const HeroImage = () => {
+const HeroImage = ({ link, textLink, imgUrl, text, blur = 0, strength = 500 }) => {
   return (
     <div className="row hero-image">
       <div className="col-12">
 
         <Parallax
-          blur={0}
-          bgImage={require('../../assets/images/kirodues_centro_de_naturopatia.jpg')}
-          bgImageAlt="the cat"
-          strength={500}
+          blur={blur}
+          bgImage={imgUrl}
+          bgImageAlt={text}
+          strength={strength}
         >
 
           <div className="hero-image__container">
             <div className="hero-image__content">
-              <p>Descubre un nuevo centro de salud y bienestar en Barcelona</p>
-              <Button text={'Reserva cita'} />
+              <p>{text}</p>
+              <Link to={link}>
+
+                <Button text={textLink} />
+              </Link>
             </div>
           </div>
         </Parallax>

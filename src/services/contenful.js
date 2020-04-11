@@ -3,7 +3,14 @@ const client = require('contentful').createClient({
   accessToken: process.env.REACT_APP_ACCESS_TOKEN
 })
 
-
+const getHomeHero = (language) =>
+  client
+    .getEntries({
+      content_type: 'home',
+      locale: language,
+      limit: 1
+    })
+    .then(response => response.items)
 
 const getComments = (language) =>
   client
@@ -44,4 +51,4 @@ const getTreatments = (language) =>
     .then(response => response.items)
 
 
-export { getComments, getReviews, getPacks, getTreatments }
+export { getComments, getReviews, getPacks, getTreatments, getHomeHero }
