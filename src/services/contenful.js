@@ -33,4 +33,15 @@ const getPacks = (language) =>
     })
     .then(response => response.items)
 
-export { getComments, getReviews, getPacks }
+const getTreatments = (language) =>
+  client
+    .getEntries({
+      content_type: 'treatment',
+      locale: language,
+      order: 'fields.nameTreatment',
+      select: 'sys.id,fields.slug,fields.thumbnail,fields.nameTreatment'
+    })
+    .then(response => response.items)
+
+
+export { getComments, getReviews, getPacks, getTreatments }

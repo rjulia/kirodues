@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { withTranslation, useTranslation } from 'react-i18next';
 import './packs.scss'
-import { Title, Spinner, Pack } from 'components'
+import { Title, Spinner, Pack, BlockTitle } from 'components'
 import { getPacks } from '../../services/contenful'
 
 const Packs = ({ i18n }) => {
@@ -13,7 +13,6 @@ const Packs = ({ i18n }) => {
 
   useEffect(() => {
     setLoading(true)
-    console.log(promise)
     promise
       .then(data => {
         setPacks(data)
@@ -27,11 +26,7 @@ const Packs = ({ i18n }) => {
   if (isLoading) return <Spinner />
   return (
     <div className="packs">
-      <div className="packs__titles">
-        <Title tag={"h1"} text={t('discount_pack.title')} />
-        <Title tag={"h3"} text={t('discount_pack.content')} />
-
-      </div>
+      <BlockTitle title={t('discount_pack.title')} subtitle={t('discount_pack.content')} />
       <div className="opion__comments container-fluid">
         <div className="container">
           <div className="row">
