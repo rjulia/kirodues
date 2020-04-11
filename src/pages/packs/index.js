@@ -20,9 +20,7 @@ const Packs = ({ i18n }) => {
       }).finally(() => {
         setLoading(false)
       })
-    return () => {
-      promise.cancel()
-    }
+
 
   }, [])
 
