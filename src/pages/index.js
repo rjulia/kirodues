@@ -4,7 +4,7 @@ export { default as Collaborator } from './Collaborator';
 export { default as Collaborators } from './Collaborators';
 export { default as Contact } from './Contact';
 export { default as NoFound } from './NoFound';
-export { default as Packs } from './Packs';
+export { default as PacksPage } from './PacksPage';
 export { default as Treatment } from './Treatment';
 export { default as Treatments } from './Treatments';
 

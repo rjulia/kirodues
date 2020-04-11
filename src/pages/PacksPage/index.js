@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { withTranslation, useTranslation } from 'react-i18next';
 import './packs.scss'
-import { Spinner, Pack, BlockTitle } from 'components'
+import { Spinner, Pack, BlockTitle } from '../../components'
 import { getPacks } from '../../services/contenful'
 
-const Packs = ({ i18n }) => {
+const PacksPage = () => {
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isLoading, setLoading] = useState(true)
   const [packs, setPacks] = useState([])
   const promise = getPacks(i18n.language)
@@ -44,4 +44,4 @@ const Packs = ({ i18n }) => {
   )
 }
 
-export default withTranslation()(Packs)
+export default PacksPage

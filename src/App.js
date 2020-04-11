@@ -6,8 +6,8 @@ import {
   Route,
 } from "react-router-dom";
 import { HeaderMobile, MenuMobile, Header, Footer } from "./layout";
-import { Home, AboutUs, Collaborator, Collaborators, Contact, Treatment, Treatments, NoFound } from "./pages";
-import Packs from "./pages/Packs/index";
+import { Home, AboutUs, Collaborator, Collaborators, Contact, Treatment, Treatments, NoFound, PacksPage } from "./pages";
+import Packs from "./pages/PacksPage/index";
 
 function App() {
   return (
