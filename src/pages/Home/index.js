@@ -8,9 +8,10 @@ import Treatments from './components/treatmenets'
 import Option from './components/opinion'
 import { Helmet } from 'react-helmet';
 import { getHomeHero } from '../../services/contenful'
+
 const Home = () => {
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [isLoading, setLoading] = useState(true)
   const [homeHero, setHomeHero] = useState([])
   const promise = getHomeHero(i18n.language)

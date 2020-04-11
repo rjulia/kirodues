@@ -50,6 +50,11 @@
     "content": "Naturopatia y Wellnes Barcelona",
     "button": "Pack Descuento"
   },
+  "treatment": {
+    "title": "No te pierdas nuestros packs personalizados",
+    "button": "Pack Descuento",
+    "price": "Precio Sesión {{value}}€"
+  },
   "collaborators": {
     "title": "Colaboradores"
   },

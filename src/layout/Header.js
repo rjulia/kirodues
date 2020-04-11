@@ -45,7 +45,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/colaboradores">
+              <Link to="/contacto">
                 {t('menu.contact')}
               </Link>
             </li>

@@ -50,6 +50,11 @@
     "content": "Naturopathy and Wellness in Barcelona",
     "button": "Discount Pack"
   },
+  "treatment": {
+    "title": "You should see our custom packages",
+    "button": "Discount Pack",
+    "price": "Price per session {{value}}€"
+  },
   "collaborators": {
     "title": "Collaborators"
   },

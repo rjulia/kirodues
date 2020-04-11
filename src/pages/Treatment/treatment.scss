@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+
+.treatment {
+  padding-bottom: 0;
+
+  .container {
+    max-width: 900px;
+  }
+
+  .treatment__image {
+    padding: 70px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .treatment__content {
+    padding-bottom: 70px;
+
+    h1 {
+      font-family: $text;
+      font-weight: 300;
+      color: $primary;
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 25px;
+    }
+
+    .treatment__text {
+      margin-bottom: 15px;
+      font-family: $text;
+      color: $text_grey;
+    }
+  }
+}

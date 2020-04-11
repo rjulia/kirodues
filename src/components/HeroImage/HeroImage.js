@@ -3,11 +3,18 @@ import { Parallax } from 'react-parallax';
 import './HeroImage.scss'
 import { Button } from 'components/';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames'
 
+const HeroImage = ({ link, textLink, imgUrl, text, blur = 0, strength = 500, middle }) => {
 
-const HeroImage = ({ link, textLink, imgUrl, text, blur = 0, strength = 500 }) => {
+  let classes = classNames({
+    'hero-image': true,
+    'row': true,
+    'middle': middle
+  })
+
   return (
-    <div className="row hero-image">
+    <div className={classes}>
       <div className="col-12">
 
         <Parallax
@@ -22,7 +29,9 @@ const HeroImage = ({ link, textLink, imgUrl, text, blur = 0, strength = 500 }) =
               <p>{text}</p>
               <Link to={link}>
 
-                <Button text={textLink} />
+                <Button
+                  small={middle}
+                  text={textLink} />
               </Link>
             </div>
           </div>

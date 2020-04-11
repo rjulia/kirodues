@@ -50,5 +50,14 @@ const getTreatments = (language) =>
     })
     .then(response => response.items)
 
+const getTreatment = (language, slug) =>
+  client
+    .getEntries({
+      'fields.slug': slug,
+      content_type: 'treatment',
+      locale: language
+    })
+    .then(response => response.items)
 
-export { getComments, getReviews, getPacks, getTreatments, getHomeHero }
+
+export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment }

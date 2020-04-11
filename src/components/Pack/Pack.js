@@ -3,7 +3,6 @@ import './Pack.scss'
 import { Title } from 'components'
 
 const Pack = ({ pack, t }) => {
-  console.log(pack)
   const { fields } = pack
   return (
     <div className="pack">

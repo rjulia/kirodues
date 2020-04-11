@@ -4,7 +4,7 @@ import './BoxImage.scss'
 import { Link } from "react-router-dom";
 
 const BoxImage = ({ title, thumbnail, slug }) => {
-  console.log(thumbnail, title)
+
   return (
     <Link to={`tratamientos/${slug}`} className="boximage">
       <div className="boximage__title"><h3>{title}</h3></div>

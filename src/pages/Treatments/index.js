@@ -25,7 +25,6 @@ const Treatments = () => {
 
   }, [])
 
-  console.log(treatments)
   if (isLoading) return <Spinner />
   return (
     <div className="treatments">

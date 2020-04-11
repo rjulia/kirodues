@@ -16,5 +16,19 @@
       font-weight: 300;
       max-width: 950px;
     }
+
+  }
+
+  &.middle {
+    .hero-image__container {
+
+      height: 600px;
+
+      p {
+        font-size: 45px;
+        max-width: 100%;
+        text-shadow: 0 1px 5px rgba($primary, 0.5);
+      }
+    }
   }
 }

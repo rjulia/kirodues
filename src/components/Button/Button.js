@@ -3,7 +3,6 @@ import './Button.scss';
 import classNames from 'classnames'
 
 const Button = ({ text, small }) => {
-  console.log(small)
   let btnClass = classNames({
     'btn': true,
     'btn-small': small
