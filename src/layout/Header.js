@@ -12,7 +12,7 @@ import { getTreatments } from '../services/contenful'
 
 const Header = () => {
   const { i18n, t } = useTranslation();
-  const [isOpenMenu, setIsOpenMenu] = useState(true)
+  const [isOpenMenu, setIsOpenMenu] = useState(false)
   const [isLoading, setLoading] = useState(true)
 
   const [treatments, setTreatments] = useState([])
