@@ -1,0 +1,33 @@
+@import '../../scss/variables';
+
+.collaborator {
+  text-align: center;
+  max-width: 900px;
+  padding-bottom: 70px;
+
+  .collaborator__content {
+    text-align: left;
+
+    img {
+      width: 100%;
+    }
+
+    .collaborator__text {
+      color: $text_grey;
+      font-family: $karla;
+    }
+  }
+
+  ul {
+    padding-left: 0.8rem;
+
+    li {
+      list-style: initial;
+      line-height: 1.1;
+
+      p {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

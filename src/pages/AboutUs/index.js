@@ -2,7 +2,7 @@ import _ from 'lodash'
 import React, { useState, useEffect } from 'react'
 import { withTranslation, useTranslation } from 'react-i18next';
 import { getReviews } from '../../services/contenful'
-import AboutImg from "../../assets/images/kirodues_quienes_somos.jpg";
+import AboutImg from "../../assets/images/yasmina-pacheco.jpeg";
 import './aboutus.scss'
 import { Title, Spinner, Review } from 'components';
 import { Helmet } from 'react-helmet';

@@ -23,6 +23,7 @@ const Collaborators = () => {
 
 
   }, [])
+  console.log(collaborators)
   if (isLoading) return <Spinner />
   return (
     <div className="collaborators">
@@ -34,7 +35,7 @@ const Collaborators = () => {
               <BoxImage
                 key={collaborator.sys.id}
                 title={_.get(collaborator, 'fields.nameCollaborator')}
-                slug={`colaboradores/${_.get(collaborator, 'fields.slug')}`}
+                slug={`/colaboradores/${_.get(collaborator, 'fields.slug')}`}
                 thumbnail={_.get(collaborator, 'fields.image.fields')}
               />))
           }

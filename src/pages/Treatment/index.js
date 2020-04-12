@@ -5,6 +5,7 @@ import './treatment.scss';
 import { useParams } from "react-router-dom";
 import { Spinner, HeroImage, Title } from 'components'
 import { getTreatment } from '../../services/contenful'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const Treatment = () => {
   let { slug } = useParams();
@@ -29,29 +30,25 @@ const Treatment = () => {
 
   if (isLoading) return <Spinner />
   console.log(treatment)
+  const { imageTreatment, nameTreatment, contentTreatment, priceTreatment, listaPrecios } = treatment.fields
   return (
     <div className="treatment">
       <div className="container">
         <div className="treatment__image">
           <img
-            src={_.get(treatment, 'fields.imageTreatment.fields.file.url')}
-            alt={_.get(treatment, 'fields.imageTreatment.fields.file.title')} />
+            src={_.get(imageTreatment, 'fields.file.url')}
+            alt={_.get(imageTreatment, 'fields.file.title')} />
         </div>
         <div className="treatment__content">
-          <Title tag={'h1'} text={_.get(treatment, 'fields.nameTreatment')} />
+          <Title tag={'h1'} text={nameTreatment} />
+          <p className="treatment__text">{documentToReactComponents(contentTreatment)}</p>
           {
-            treatment.fields.contentTreatment.content.map((paragraph, idx) => (
-
-              <p key={idx} className="treatment__text">{paragraph.content[0].value}</p>
-            ))
-          }
-          {
-            treatment.fields.priceTreatment && <p>
-              {t('treatment.price', { value: _.get(treatment, "fields.priceTreatment") })}
+            priceTreatment && <p>
+              {t('treatment.price', { value: priceTreatment })}
             </p>
           }
           {
-            treatment.fields.listaPrecios &&
+            listaPrecios &&
             <div className="treatment__price">
               <Title tag={'h5'} text={'Precio/Sesion'} />
               <ul>
