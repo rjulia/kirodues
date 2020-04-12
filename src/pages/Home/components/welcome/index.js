@@ -8,19 +8,22 @@ import { Link } from 'react-router-dom';
 const Welcome = () => {
   const { t } = useTranslation();
   return (
-    <div className="welcome container-fluid">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-md-6">
-            <Title tag={'h3'} text={t('home.first_block.title')}></Title>
-            <p>{t('home.first_block.content')}</p>
-            <Link to="/nosotros">
+    <div className="welcome row ">
+      <div className="col-12">
 
-              <Button small text={t('home.first_block.button')} />
-            </Link>
-          </div>
-          <div className="col-12 col-md-6 welcome__logo">
-            <img src={LogoTrans} alt="" />
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <Title tag={'h3'} text={t('home.first_block.title')}></Title>
+              <p>{t('home.first_block.content')}</p>
+              <Link to="/nosotros">
+
+                <Button small text={t('home.first_block.button')} />
+              </Link>
+            </div>
+            <div className="col-12 col-md-6 welcome__logo">
+              <img src={LogoTrans} alt="" />
+            </div>
           </div>
         </div>
       </div>

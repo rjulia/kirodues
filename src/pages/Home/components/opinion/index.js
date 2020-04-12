@@ -25,7 +25,7 @@ const Opinion = ({ i18n }) => {
 
   if (isLoading) return <Spinner />
   return (
-    <div className="opinion">
+    <div className="opinion row">
       <div className="opinion__title">
         <Title tag={'h3'} text={t('home.third_block.title')} />
       </div>

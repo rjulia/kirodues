@@ -3,7 +3,7 @@
 .footer__container {
   background-color: $secondary;
   padding: 70px 40px;
-  height: 416px;
+
   color: $white;
 
 
@@ -90,5 +90,9 @@
         margin: 0 10px;
       }
     }
+  }
+
+  @include desktop {
+    height: 416px;
   }
 }

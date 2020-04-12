@@ -15,7 +15,8 @@ const Treatments = () => {
 
   const { t } = useTranslation();
   return (
-    <div className="treatments__home">
+    <div className="treatments__home row">
+
       <Title tag={'h3'} text={t('home.second_block.title')} />
       <div className="treatments__pictures">
         <div className="row">

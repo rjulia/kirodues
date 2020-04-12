@@ -1,12 +1,25 @@
 @import '../../scss/variables';
 
 .hero-image {
+  .col-12 {
+    padding: 0;
 
+  }
+
+  .bg {
+    max-width: 500px;
+    height: calc(100vh - 100px);
+
+    img {
+      height: 500px;
+    }
+  }
 
   .hero-image__container {
     height: calc(100vh - 100px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 50px;
     justify-content: center;
     text-align: center;
 
@@ -14,7 +27,7 @@
       font-size: 24px;
       color: $white;
       font-weight: 300;
-      padding: 0 50px;
+      padding: 0 50px 50px;
       max-width: 950px;
     }
 
@@ -34,10 +47,23 @@
   }
 
   @include desktop {
-    p {
-      font-size: 60px;
-      max-width: 950px;
+    .bg {
+      max-width: 100%;
 
+      img {
+        height: 100%;
+      }
+    }
+
+    .hero-image__container {
+      align-items: center;
+      padding-top: 0;
+
+      p {
+        font-size: 60px;
+        max-width: 950px;
+        padding: 0 50px;
+      }
     }
   }
 }

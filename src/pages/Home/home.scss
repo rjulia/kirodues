@@ -1,3 +1,8 @@
+@import '../../scss/variables';
+
 .home {
-  padding: 0;
+  @include desktop {
+    padding: 0;
+
+  }
 }

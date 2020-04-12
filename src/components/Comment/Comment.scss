@@ -3,6 +3,7 @@
 .comment {
   display: flex;
   flex-direction: column;
+  margin: 15px 0;
 
   .comment__icon--box {
     margin-bottom: 20px;
@@ -22,17 +23,15 @@
       fill: currentcolor;
       line-height: 0;
 
-      svg {}
-
     }
   }
 
   .comment__content--box {
     margin: 0 0 20px 0;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
     font-style: italic;
-    padding: 0 0 0 40px;
+    padding: 0 0 0 20px;
     color: $secondary;
     font-family: 'Nunito Sans';
     font-weight: 300;
@@ -46,6 +45,14 @@
       font-family: 'Work Sans';
       font-weight: 500;
       text-transform: uppercase;
+    }
+  }
+
+  @include desktop {
+    .comment__content--box {
+      font-size: 18px;
+      padding: 0 0 0 40px;
+
     }
   }
 }

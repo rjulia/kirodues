@@ -7,7 +7,7 @@ import { Title } from 'components';
 const Gift = () => {
   const { t } = useTranslation();
   return (
-    <div className="gift">
+    <div className="gift row">
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={GiftImg}

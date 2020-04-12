@@ -4,9 +4,12 @@ import './HeroImage.scss'
 import { Button } from 'components/';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames'
+import { useMediaQuery } from 'react-responsive'
 
 const HeroImage = ({ link, textLink, imgUrl, text, blur = 0, strength = 500, middle }) => {
-
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: '(max-device-width: 1224px)'
+  })
   let classes = classNames({
     'hero-image': true,
     'row': true,
@@ -21,7 +24,8 @@ const HeroImage = ({ link, textLink, imgUrl, text, blur = 0, strength = 500, mid
           blur={blur}
           bgImage={imgUrl}
           bgImageAlt={text}
-          strength={strength}
+          strength={isTabletOrMobileDevice ? 0 : strength}
+          bgClassName={'bg'}
         >
 
           <div className="hero-image__container">
