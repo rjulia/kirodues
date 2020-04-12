@@ -1,6 +1,7 @@
 import _ from 'lodash'
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import './collaborators.scss';
 import { Spinner, BlockTitle, BoxImage } from 'components'
 import { getCollaborators } from '../../services/contenful'
@@ -27,6 +28,10 @@ const Collaborators = () => {
   if (isLoading) return <Spinner />
   return (
     <div className="collaborators">
+      <Helmet>
+        <title>Kirodues - Collaboradores</title>
+        <meta name="description" content="EL mejor tratamiento para tu espalda" />
+      </Helmet>
       <BlockTitle title={t('collaborators.title')} />
       <div className="container">
         <div className="collaborators__grid">

@@ -1,0 +1,26 @@
+@import '../../../../scss/variables';
+
+.gift {
+  .hero-image__container {
+
+    min-height: 600px;
+
+    .col-12 {
+      padding: 70px;
+
+      h3 {
+        color: $white;
+        margin-bottom: 70px;
+        text-shadow: 0 0 3px $secondary;
+      }
+
+      p {
+        max-width: 400px;
+        font-size: 20px;
+        font-weight: 400;
+        color: $white;
+      }
+
+    }
+  }
+}

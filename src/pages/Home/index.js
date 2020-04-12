@@ -8,6 +8,7 @@ import Treatments from './components/treatmenets'
 import Option from './components/opinion'
 import { Helmet } from 'react-helmet';
 import { getHomeHero } from '../../services/contenful'
+import Gift from './components/gift';
 
 const Home = () => {
 
@@ -41,6 +42,7 @@ const Home = () => {
       <Welcome />
       <Treatments />
       <Option />
+      <Gift />
     </div>
   )
 }
