@@ -29,7 +29,7 @@ const Treatment = () => {
   }, [])
 
   if (isLoading) return <Spinner />
-  console.log(treatment)
+
   const { imageTreatment, nameTreatment, contentTreatment, priceTreatment, listaPrecios } = treatment.fields
   return (
     <div className="treatment">

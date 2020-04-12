@@ -1,18 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { withTranslation, useTranslation } from 'react-i18next';
 import './Header.scss'
 import Logo from "../assets/images/kirodues_log-300x113.jpg";
-import { NavLink as Link, } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import En from 'assets/images/en.png'
 import Es from 'assets/images/es.alt.png'
 import { IoIosMenu } from "react-icons/io";
 import { HeaderMobile } from 'layout';
-
+import { getTreatments } from '../services/contenful'
 
 const Header = () => {
   const { i18n, t } = useTranslation();
-  const [isOpenMenu, setIsOpenMenu] = useState(false)
+  const [isOpenMenu, setIsOpenMenu] = useState(true)
+  const [isLoading, setLoading] = useState(true)
+
+  const [treatments, setTreatments] = useState([])
+  const promise = getTreatments(i18n.language)
+
+  useEffect(() => {
+    setLoading(true)
+    promise
+      .then(data => {
+        setTreatments(data)
+      }).finally(() => {
+        setLoading(false)
+      })
+  }, [])
+
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
   };
@@ -20,13 +35,13 @@ const Header = () => {
   const toogleMenu = () => {
     setIsOpenMenu(!isOpenMenu)
   }
-
+  console.log(treatments)
   return (
     <nav className="header__container container-fluid">
 
       <div className="header__logo">
         <Link
-          exact to="/">    <img src={Logo} alt="" />
+          exact to="/"><img src={Logo} alt="" />
         </Link>
 
       </div>
@@ -78,7 +93,7 @@ const Header = () => {
       <div className="header__menu--burger" onClick={() => toogleMenu()}>
         <IoIosMenu size={44} color={"#22693c"} />
       </div>
-      <HeaderMobile isOpen={isOpenMenu} onToogleMenu={() => toogleMenu()} />
+      <HeaderMobile isOpen={isOpenMenu} onToogleMenu={() => toogleMenu()} treatments={treatments} />
     </nav>
   )
 }

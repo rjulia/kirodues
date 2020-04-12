@@ -16,7 +16,7 @@ const Gift = () => {
       >
 
         <div className="hero-image__container row justify-content-end">
-          <div class="col-12 col-md-6">
+          <div className="col-12 col-md-6">
             <Title tag={"h3"} text={t('home.fourth_block.title')} />
             <p>{t('home.fourth_block.content')}</p>
           </div>

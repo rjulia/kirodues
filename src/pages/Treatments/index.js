@@ -35,7 +35,7 @@ const Treatments = () => {
             treatments.map(treatment => (
               <BoxImage
                 key={treatment.sys.id}
-                title={_.get(treatment, 'fields.nameTreatment')}
+                title={_.get(treatment, 'fields.sortTreatment')}
                 slug={`tratamientos/${_.get(treatment, 'fields.slug')}`}
                 thumbnail={_.get(treatment, 'fields.thumbnail.fields')}
               />))

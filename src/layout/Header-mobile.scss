@@ -21,6 +21,34 @@
     height: 100vh;
     background-color: $white;
     transition: left 3s;
+    padding: 40px 0;
+
+    svg {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .menu-mobile--menu {
+    height: 100vh;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px;
+
+      li {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 13px;
+
+        a {
+          color: $primary;
+        }
+      }
+    }
   }
 
   &.open {

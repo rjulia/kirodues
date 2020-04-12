@@ -46,7 +46,7 @@ const getTreatments = (language) =>
       content_type: 'treatment',
       locale: language,
       order: 'fields.nameTreatment',
-      select: 'sys.id,fields.slug,fields.thumbnail,fields.nameTreatment'
+      select: 'sys.id,fields.slug,fields.thumbnail,fields.sortTreatment'
     })
     .then(response => response.items)
 
