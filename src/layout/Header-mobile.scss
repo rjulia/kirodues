@@ -1,0 +1,34 @@
+@import '../scss/variables';
+
+.menu-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color:$black, $alpha: 0.5);
+
+  transition: background-color 3s ease-out, display 3s ease-out;
+  z-index: 1000;
+
+  .menu-mobile_content {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100vh;
+    width: 90vw;
+    height: 100vh;
+    background-color: $white;
+    transition: left 3s;
+  }
+
+  &.open {
+    display: block;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    .menu-mobile_content {
+      left: 0;
+    }
+  }
+}

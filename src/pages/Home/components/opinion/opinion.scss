@@ -16,8 +16,15 @@
   }
 
   .opion__comments {
-    padding: 70px 0;
+    padding: 20px -15px;
     position: relative;
     display: block;
+  }
+
+  @include desktop {
+    .opion__comments {
+      padding: 70px 0;
+
+    }
   }
 }

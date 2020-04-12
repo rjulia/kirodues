@@ -10,12 +10,11 @@
   }
 
   .treatments__pictures {
-    margin-bottom: 80px;
+    margin-bottom: 25px;
     margin-top: 25px;
 
     .col-12 {
       position: relative;
-      padding: 0;
       cursor: pointer;
 
       span {
@@ -42,6 +41,20 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  @include desktop {
+    .treatments__pictures {
+      margin-bottom: 80px;
+      margin-top: 25px;
+
+      .col-12 {
+        padding: 0;
+
+      }
+
+
     }
   }
 }

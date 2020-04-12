@@ -2,15 +2,27 @@
 
 .btn {
   color: $white;
-  padding: 15px 40px;
+  padding: 15px 15px;
   font-family: $title;
-  font-size: 36px;
+  font-size: 18px;
   background-color: $primary;
-  border-radius: 80px;
+  border-radius: 50px;
 
   &.btn-small {
-    padding: 0 30px;
-    font-size: 22px;
-    line-height: 46px;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  @include desktop {
+    padding: 15px 40px;
+    font-size: 36px;
+    border-radius: 80px;
+
+    &.btn-small {
+      padding: 0 30px;
+      font-size: 22px;
+      line-height: 46px;
+    }
   }
 }

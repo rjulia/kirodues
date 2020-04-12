@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { withTranslation, useTranslation } from 'react-i18next';
 import './Header.scss'
 import Logo from "../assets/images/kirodues_log-300x113.jpg";
 import { NavLink as Link, } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import En from 'assets/images/en.png'
+import Es from 'assets/images/es.alt.png'
+import { IoIosMenu } from "react-icons/io";
+import { HeaderMobile } from 'layout';
 
 
 const Header = () => {
   const { i18n, t } = useTranslation();
-
+  const [isOpenMenu, setIsOpenMenu] = useState(false)
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
   };
+
+  const toogleMenu = () => {
+    setIsOpenMenu(!isOpenMenu)
+  }
+
   return (
     <nav className="header__container container-fluid">
 
@@ -21,7 +30,7 @@ const Header = () => {
         </Link>
 
       </div>
-      <div className="header__menu--box">
+      <div className="header__menu--box d-none d-md-flex">
         <div className="header_menu--menu">
           <ul>
             <li>
@@ -53,7 +62,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="header__menu--language">
-          <span onClick={() => changeLanguage('es')}>ES</span> | <span onClick={() => changeLanguage('en')}>EN</span>
+          <span onClick={() => changeLanguage('es')}><img src={Es} alt="Español" /> </span> <span onClick={() => changeLanguage('en')}> <img src={En} alt="English" /> </span>
         </div>
         <div className="header__menu--social-media">
           <ul>
@@ -64,7 +73,12 @@ const Header = () => {
             </li>
           </ul>
         </div>
+
       </div>
+      <div className="header__menu--burger" onClick={() => toogleMenu()}>
+        <IoIosMenu size={44} color={"#22693c"} />
+      </div>
+      <HeaderMobile isOpen={isOpenMenu} onToogleMenu={() => toogleMenu()} />
     </nav>
   )
 }

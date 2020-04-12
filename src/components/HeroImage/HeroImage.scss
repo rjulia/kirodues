@@ -11,9 +11,10 @@
     text-align: center;
 
     p {
-      font-size: 60px;
+      font-size: 24px;
       color: $white;
       font-weight: 300;
+      padding: 0 50px;
       max-width: 950px;
     }
 
@@ -29,6 +30,14 @@
         max-width: 100%;
         text-shadow: 0 1px 5px rgba($primary, 0.5);
       }
+    }
+  }
+
+  @include desktop {
+    p {
+      font-size: 60px;
+      max-width: 950px;
+
     }
   }
 }
