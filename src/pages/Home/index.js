@@ -15,9 +15,9 @@ const Home = () => {
   const { i18n } = useTranslation();
   const [isLoading, setLoading] = useState(true)
   const [homeHero, setHomeHero] = useState([])
-  const promise = getHomeHero(i18n.language)
 
   useEffect(() => {
+    const promise = getHomeHero(i18n.language)
     setLoading(true)
     promise
       .then(data => {
@@ -25,7 +25,8 @@ const Home = () => {
       }).finally(() => {
         setLoading(false)
       })
-  }, [])
+  }, [i18n])
+
   if (isLoading) return <Spinner />
 
   return (

@@ -37,11 +37,24 @@
       }
     }
 
-    .header__menu--burger {
-      cursor: pointer;
+    .header__menu--language {
+      padding: 0 10px;
+
+      span {
+        margin: 0 5px;
+        display: inline-block;
+        position: relative;
+      }
     }
 
+
     .header__menu--social-media {
+      padding-left: 10px;
+
+      ul {
+        padding: 0;
+      }
+
       a {
         color: $secondary;
         margin: 0 5px;
@@ -52,12 +65,22 @@
         }
       }
     }
+
+    .header__menu--burger {
+      cursor: pointer;
+    }
   }
 
   @include desktop {
     min-height: 100px;
     padding-left: 40px;
     padding-right: 40px;
+
+
+    .header__menu--burger {
+      display: none;
+    }
+
 
     .header__logo {
       max-width: 200px;

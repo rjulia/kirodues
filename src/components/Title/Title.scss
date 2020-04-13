@@ -7,6 +7,7 @@
   font-family: $text;
   margin-bottom: 15px;
   line-height: 24px;
+  width: 100%;
 
   @include desktop {
     font-size: 40px;

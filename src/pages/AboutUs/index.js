@@ -10,11 +10,11 @@ import { Helmet } from 'react-helmet';
 const AboutUs = ({ i18n }) => {
 
   const { t } = useTranslation();
-  const promise = getReviews(i18n.language)
   const [reviews, setReviews] = useState([])
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
+    const promise = getReviews(i18n.language)
     setLoading(true)
     promise
       .then(data => {
@@ -23,7 +23,7 @@ const AboutUs = ({ i18n }) => {
         setLoading(false)
       })
 
-  }, [])
+  }, [i18n])
 
   if (isLoading) return <Spinner />
   return (

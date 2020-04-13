@@ -8,11 +8,11 @@ import './opinion.scss';
 const Opinion = ({ i18n }) => {
 
   const { t } = useTranslation();
-  const promise = getComments(i18n.language)
   const [comments, setComments] = useState([])
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
+    const promise = getComments(i18n.language)
     setLoading(true)
     promise
       .then(data => {
@@ -21,7 +21,7 @@ const Opinion = ({ i18n }) => {
         setLoading(false)
       })
 
-  }, [])
+  }, [i18n])
 
   if (isLoading) return <Spinner />
   return (

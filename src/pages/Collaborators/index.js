@@ -10,21 +10,18 @@ const Collaborators = () => {
   const { t, i18n } = useTranslation();
   const [isLoading, setLoading] = useState(true)
   const [collaborators, setCollaborators] = useState([])
-  const promise = getCollaborators(i18n.language)
 
   useEffect(() => {
+    const promise = getCollaborators(i18n.language)
     setLoading(true)
-
     promise
       .then(data => {
         setCollaborators(data)
       }).finally(() => {
         setLoading(false)
       })
+  }, [i18n])
 
-
-  }, [])
-  console.log(collaborators)
   if (isLoading) return <Spinner />
   return (
     <div className="collaborators">

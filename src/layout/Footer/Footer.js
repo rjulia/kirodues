@@ -5,6 +5,7 @@ import { withTranslation, useTranslation } from 'react-i18next';
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 import Logo from "assets/images/kirodues_centro_de_naturopatia_barcelona_salud_bienestar_transparente.png";
+import { Link } from 'react-router-dom';
 const Footer = () => {
   const { t } = useTranslation();
 
@@ -49,9 +50,10 @@ const Footer = () => {
         </div>
         <div className="footer__box-legal">
           <ul>
-            <li>{t('footer.privacy')}</li> |
-            <li>{t('footer.cookies')}</li> |
-            <li>{t('footer.legal')}</li>
+
+            <li> <Link to={'/legal/politica-de-privacidad'}>{t('footer.privacy')}</Link> </li> |
+            <li> <Link to={'/legal/politica-de-cookies'}>{t('footer.cookies')}</Link> </li> |
+            <li> <Link to={'/legal/aviso-legal'}>{t('footer.legal')}</Link> </li>
           </ul>
         </div>
       </div>

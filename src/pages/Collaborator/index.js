@@ -2,7 +2,7 @@ import _ from 'lodash'
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import './collaborator.scss';
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Spinner, BlockTitle, Title } from 'components'
 import { getCollaborator } from '../../services/contenful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
@@ -11,23 +11,20 @@ const Collaborator = () => {
 
   let { slug } = useParams();
   console.log(slug)
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [isLoading, setLoading] = useState(true)
   const [collaborator, setCollaborator] = useState([])
-  const promise = getCollaborator(i18n.language, slug)
 
   useEffect(() => {
+    const promise = getCollaborator(i18n.language, slug)
     setLoading(true)
-
     promise
       .then(data => {
         setCollaborator(data[0])
       }).finally(() => {
         setLoading(false)
       })
-
-
-  }, [])
+  }, [i18n, slug])
 
   console.log(collaborator)
   if (isLoading) return <Spinner />

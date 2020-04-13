@@ -9,9 +9,9 @@ const PacksPage = () => {
   const { t, i18n } = useTranslation();
   const [isLoading, setLoading] = useState(true)
   const [packs, setPacks] = useState([])
-  const promise = getPacks(i18n.language)
 
   useEffect(() => {
+    const promise = getPacks(i18n.language)
     setLoading(true)
     promise
       .then(data => {
@@ -19,9 +19,7 @@ const PacksPage = () => {
       }).finally(() => {
         setLoading(false)
       })
-
-
-  }, [])
+  }, [i18n])
 
   if (isLoading) return <Spinner />
   return (

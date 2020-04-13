@@ -13,20 +13,17 @@ const Treatment = () => {
   const { t, i18n } = useTranslation();
   const [isLoading, setLoading] = useState(true)
   const [treatment, setTreatment] = useState([])
-  const promise = getTreatment(i18n.language, slug)
 
   useEffect(() => {
+    const promise = getTreatment(i18n.language, slug)
     setLoading(true)
-
     promise
       .then(data => {
         setTreatment(data[0])
       }).finally(() => {
         setLoading(false)
       })
-
-
-  }, [])
+  }, [i18n, slug])
 
   if (isLoading) return <Spinner />
 

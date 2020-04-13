@@ -13,20 +13,18 @@ import { getTreatments } from '../../services/contenful'
 const Header = () => {
   const { i18n, t } = useTranslation();
   const [isOpenMenu, setIsOpenMenu] = useState(false)
-  const [isLoading, setLoading] = useState(true)
-
   const [treatments, setTreatments] = useState([])
-  const promise = getTreatments(i18n.language)
 
   useEffect(() => {
-    setLoading(true)
+    const promise = getTreatments(i18n.language)
+
     promise
       .then(data => {
         setTreatments(data)
       }).finally(() => {
-        setLoading(false)
+
       })
-  }, [])
+  }, [i18n])
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);

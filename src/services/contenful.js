@@ -78,5 +78,13 @@ const getCollaborator = (language, slug) =>
     })
     .then(response => response.items)
 
+const getLegalStatements = (language, slug) =>
+  client
+    .getEntries({
+      'fields.slug': slug,
+      content_type: 'legal',
+      locale: language
+    })
+    .then(response => response.items)
 
-export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment, getCollaborators, getCollaborator }
+export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment, getCollaborators, getCollaborator, getLegalStatements }
