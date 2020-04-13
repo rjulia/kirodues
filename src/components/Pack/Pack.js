@@ -13,7 +13,7 @@ const Pack = ({ pack, t }) => {
         }
       </ul>
       <div>
-        <p className="pack__price">{fields.priceWithoutDiscount} € </p>
+        <p className="pack__price">{fields.priceDiscountPack} € </p>
       </div>
       <div>
         <p>{t('discount_pack.price', { value: fields.priceWithoutDiscount })}</p>
