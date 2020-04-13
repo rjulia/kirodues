@@ -13,7 +13,7 @@ const Welcome = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 welcome__content">
               <Title tag={'h3'} text={t('home.first_block.title')}></Title>
               <p>{t('home.first_block.content')}</p>
               <Link to="/nosotros">

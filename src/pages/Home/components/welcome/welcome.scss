@@ -4,45 +4,68 @@
 .welcome {
   min-height: calc(100vh - 545px);
   background-color: #fffbef;
-  padding: 140px 0;
+  padding: 70px 0 35px;
   display: flex;
 
-  h3 {
-    color: $secondary;
-    font-size: 20px;
-    width: 100%;
-    font-weight: 300;
-    font-family: $text;
-    margin-bottom: 20px;
-    line-height: 25px;
-  }
+  .welcome__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-  p {
-    font-size: 16px;
-    font-family: $aux;
-    line-height: 24px;
-    font-weight: 300;
-    color: $text_grey;
-    margin-bottom: 40px;
+    h3 {
+      color: $secondary;
+      font-size: 20px;
+      width: 100%;
+      font-weight: 300;
+      font-family: $text;
+      margin-bottom: 20px;
+      line-height: 25px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: $aux;
+      line-height: 24px;
+      font-weight: 300;
+      color: $text_grey;
+      margin-bottom: 40px;
+    }
   }
 
   .welcome__logo {
+    padding-top: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     img {
-      transform: scale(1.2);
+      transform: scale(0.8);
     }
 
   }
 
   @include desktop {
 
+    padding: 140px 0;
 
-    h3 {
-      font-size: 40px;
-      line-height: 45px;
+    .welcome__content {
+      text-align: left;
+
+      h3 {
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+
+    .welcome__logo {
+      padding-top: 0px;
+
+      img {
+        transform: scale(1.2);
+      }
+
     }
   }
 

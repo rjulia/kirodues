@@ -5,11 +5,11 @@
 
   .opinion__title {
     background-color: $secondary;
-    padding: 70px 0;
+    padding: 35px 0;
     text-align: center;
 
     h3 {
-      font-size: 40px;
+      font-size: 20px;
       font-weight: 300;
       color: $white;
     }
@@ -22,6 +22,14 @@
   }
 
   @include desktop {
+    .opinion__title {
+      padding: 70px 0;
+
+      h3 {
+        font-size: 40px;
+      }
+    }
+
     .opion__comments {
       padding: 70px 0;
 

@@ -5,7 +5,7 @@
 
     min-height: 600px;
 
-    .col-12 {
+    .hero-image__col {
       padding: 70px;
 
       h3 {
@@ -23,4 +23,6 @@
 
     }
   }
+
+  @include desktop {}
 }

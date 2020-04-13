@@ -1,12 +1,20 @@
 import React from 'react'
 import './Comment.scss'
 import { ReactComponent as CommentIcon } from "../../assets/icons/comment.svg";
+import { useMediaQuery } from 'react-responsive'
+
 const Comnent = ({ text, author }) => {
+
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: '(max-device-width: 1224px)'
+  })
+
+  const sizeIcon = isTabletOrMobileDevice ? '35' : '60'
   return (
     <div className="comment">
       <div className="comment__icon--box">
         <span>
-          <CommentIcon width="60" height="60" />
+          <CommentIcon width={sizeIcon} height={sizeIcon} />
         </span>
       </div>
 

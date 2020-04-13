@@ -5,9 +5,8 @@ import { IoMdClose } from "react-icons/io";
 import { NavLink as Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
-
 const HeaderMobile = ({ isOpen, onToogleMenu, treatments }) => {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
   let classes = classNames({
     'menu-mobile': true,

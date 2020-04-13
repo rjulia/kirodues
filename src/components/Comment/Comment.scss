@@ -2,12 +2,12 @@
 
 .comment {
   display: flex;
-  flex-direction: column;
   margin: 15px 0;
 
   .comment__icon--box {
     margin-bottom: 20px;
     text-align: center;
+    padding-right: 20px;
 
     span {
       margin: 0;
@@ -49,6 +49,8 @@
   }
 
   @include desktop {
+    flex-direction: column;
+
     .comment__content--box {
       font-size: 18px;
       padding: 0 0 0 40px;

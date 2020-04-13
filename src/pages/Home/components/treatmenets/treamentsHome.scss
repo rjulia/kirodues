@@ -3,10 +3,10 @@
 .treatments__home {
   text-align: center;
   background-color: $bg_light;
-  padding-bottom: 80px;
+  padding-bottom: 35px;
 
   h3 {
-    padding: 40px 0;
+    padding: 20px;
   }
 
   .treatments__pictures {
@@ -44,7 +44,23 @@
     }
   }
 
+  .treatments__button--box {
+    text-align: center;
+
+    width: 100%;
+
+    a {
+      margin: 0 auto;
+    }
+  }
+
   @include desktop {
+    padding-bottom: 70px;
+
+    h3 {
+      padding: 40px 0;
+    }
+
     .treatments__pictures {
       margin-bottom: 80px;
       margin-top: 25px;
