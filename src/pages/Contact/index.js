@@ -30,7 +30,6 @@ const Contact = () => {
             <div className="contact__box-icons--text">
               <p>Carrer mare de due del Pilar 12</p>
               <p>Sevilla</p>
-
             </div>
           </div>
           <div className="contact__box-icons email">
@@ -44,7 +43,6 @@ const Contact = () => {
           <FormContact />
         </div>
       </div>
-
     </div>
   )
 }
