@@ -4,7 +4,12 @@
   min-height: calc(100vh - 100px);
 
   .about__content {
-    padding: 100px 50px;
+    padding: 35px 20px;
+
+    .title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
 
     p {
       font-family: $karla;
@@ -26,11 +31,11 @@
 
   .about__title-reviews {
     background-color: $secondary;
-    padding: 70px 0;
+    padding: 35px 0;
     text-align: center;
 
     h3 {
-      font-size: 40px;
+      font-size: 20px;
       font-weight: 300;
       color: $white;
     }
@@ -38,5 +43,19 @@
 
   .about_content-reviews {
     padding: 70px 0;
+  }
+
+  @include desktop {
+    .about__content {
+      padding: 100px 50px
+    }
+
+    .about__title-reviews {
+      padding: 70px 0;
+
+      h3 {
+        font-size: 40px;
+      }
+    }
   }
 }

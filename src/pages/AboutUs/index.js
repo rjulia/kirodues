@@ -29,16 +29,16 @@ const AboutUs = ({ i18n }) => {
   return (
     <div className="about">
       <Helmet>
-        <title>Kirodues - Home</title>
+        <title>Kirodues - Quienes somos</title>
         <meta name="description" content="EL mejor tratamiento para tu espalda" />
       </Helmet>
       <div className="container">
         <div className="row about__content">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-8">
             <Title tag="h2" text={t('about.title')} />
             <p dangerouslySetInnerHTML={{ __html: t('about.text') }} />
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-4">
             <img src={AboutImg} alt="nuestro equipo" />
           </div>
         </div>

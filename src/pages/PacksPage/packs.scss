@@ -6,7 +6,7 @@
 
   .opion__comments {
     background-color: $bg_light;
-    padding: 70px;
+    padding: 35px 20px;
 
     .col-12 {
       display: flex;
@@ -14,4 +14,9 @@
     }
   }
 
+  @include desktop {
+    .opion__comments {
+      padding: 70px;
+    }
+  }
 }

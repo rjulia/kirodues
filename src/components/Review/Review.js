@@ -1,4 +1,5 @@
 import React from 'react'
+import './Review.scss';
 
 const Review = ({ link, imgData }) => {
   return (

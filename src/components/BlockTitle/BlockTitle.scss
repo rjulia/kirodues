@@ -1,20 +1,35 @@
 @import '../../scss/variables';
 
 .block__titles {
-  padding: 70px 0;
+  padding: 35px 20px;
   background-color: $white;
 
   h1 {
     color: $primary;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: 300;
 
   }
 
   h3 {
-    font-size: 30px;
-    line-height: 39px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 300;
+  }
+
+  @include desktop {
+    padding: 70px 0;
+
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
+
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 39px;
+    }
   }
 }
