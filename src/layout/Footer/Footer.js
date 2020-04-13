@@ -50,8 +50,6 @@ const Footer = () => {
         </div>
         <div className="footer__box-legal">
           <ul>
-
-            <li> <Link to={'/legal/politica-de-privacidad'}>{t('footer.privacy')}</Link> </li> |
             <li> <Link to={'/legal/politica-de-cookies'}>{t('footer.cookies')}</Link> </li> |
             <li> <Link to={'/legal/aviso-legal'}>{t('footer.legal')}</Link> </li>
           </ul>

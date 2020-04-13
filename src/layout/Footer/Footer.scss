@@ -98,13 +98,17 @@
         font-weight: 300;
         font-family: $aux;
         margin: 0 10px;
+
+        a {
+          color: $white;
+        }
       }
     }
   }
 
   @include desktop {
-    min-height: 416px;
-    padding: 70px 40px;
+
+    padding: 70px 40px 0;
 
     .footer__box-links {
       text-align: left;

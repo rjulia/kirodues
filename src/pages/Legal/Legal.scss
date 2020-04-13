@@ -1,1 +1,28 @@
-.legal {}
+@import '../../scss/variables';
+
+.legal {
+  max-width: 900px;
+  padding: 35px 0;
+  min-height: calc(100vh - 100px);
+
+  @include desktop {
+    padding: 70px 0;
+
+  }
+
+  h2 {
+    color: $primary;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  .legal__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: $text_grey;
+    font-family: $karla;
+
+  }
+}
