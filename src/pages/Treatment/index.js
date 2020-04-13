@@ -33,7 +33,7 @@ const Treatment = () => {
   const { imageTreatment, nameTreatment, contentTreatment, priceTreatment, listaPrecios } = treatment.fields
   return (
     <div className="treatment">
-      <div className="container">
+      <div className="container p-0">
         <div className="treatment__image">
           <img
             src={_.get(imageTreatment, 'fields.file.url')}
@@ -41,7 +41,7 @@ const Treatment = () => {
         </div>
         <div className="treatment__content">
           <Title tag={'h1'} text={nameTreatment} />
-          <p className="treatment__text">{documentToReactComponents(contentTreatment)}</p>
+          <div className="treatment__text">{documentToReactComponents(contentTreatment)}</div>
           {
             priceTreatment && <p>
               {t('treatment.price', { value: priceTreatment })}

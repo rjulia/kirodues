@@ -8,29 +8,52 @@
   }
 
   .treatment__image {
-    padding: 70px 0;
-
     img {
       width: 100%;
     }
   }
 
   .treatment__content {
-    padding-bottom: 70px;
+    padding: 35px 15px;
+
 
     h1 {
       font-family: $text;
       font-weight: 300;
       color: $primary;
-      font-size: 36px;
-      line-height: 48px;
+      font-size: 30px;
+      line-height: 36px;
       margin-bottom: 25px;
     }
 
     .treatment__text {
-      margin-bottom: 15px;
+      font-size: 14px;
       font-family: $text;
       color: $text_grey;
+    }
+  }
+
+  @include desktop {
+
+
+    .treatment__image {
+      padding: 35px 0 0;
+    }
+
+    .treatment__content {
+      padding: 35px 0 35px;
+
+      h1 {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 25px;
+      }
+
+      .treatment__text {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
     }
   }
 }
