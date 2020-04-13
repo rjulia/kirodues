@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import './Button.scss';
-import classNames from 'classnames'
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 const Button = ({ text, small }) => {
   let btnClass = classNames({
@@ -14,5 +15,11 @@ const Button = ({ text, small }) => {
     </span>
   )
 }
+
+Button.prototype = {
+  text: PropTypes.string.isRequired,
+  small: PropTypes.bool
+}
+
 
 export default Button

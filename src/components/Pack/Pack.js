@@ -1,6 +1,8 @@
 import React from 'react'
 import './Pack.scss'
 import { Title } from 'components'
+import PropTypes from 'prop-types';
+
 
 const Pack = ({ pack, t }) => {
   const { fields } = pack
@@ -20,6 +22,11 @@ const Pack = ({ pack, t }) => {
       </div>
     </div>
   )
+}
+
+Pack.prototype = {
+  pack: PropTypes.object,
+  t: PropTypes.func
 }
 
 export default Pack

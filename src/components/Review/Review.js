@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 import './Review.scss';
+import PropTypes from 'prop-types';
+
 
 const Review = ({ link, imgData }) => {
   return (
@@ -9,6 +11,11 @@ const Review = ({ link, imgData }) => {
       </a>
     </div>
   )
+}
+
+Review.prototype = {
+  link: PropTypes.string.isRequired,
+  imgData: PropTypes.object
 }
 
 export default Review

@@ -1,5 +1,5 @@
-import React from 'react'
-import './Spinner.scss'
+import React from 'react';
+import './Spinner.scss';
 
 const Spinner = () => {
   return (
@@ -8,5 +8,6 @@ const Spinner = () => {
     </div>
   )
 }
+
 
 export default Spinner
