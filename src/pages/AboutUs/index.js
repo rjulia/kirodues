@@ -29,8 +29,8 @@ const AboutUs = ({ i18n }) => {
   return (
     <div className="about">
       <Helmet>
-        <title>Kirodues - Quienes somos</title>
-        <meta name="description" content="EL mejor tratamiento para tu espalda" />
+        <title>{t('helmet.about_us.title')}</title>
+        <meta name="description" content={t('helmet.about_us.description')} />
       </Helmet>
       <div className="container">
         <div className="row about__content">

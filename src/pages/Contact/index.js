@@ -1,20 +1,27 @@
-import React from 'react'
+import React from 'react';
 import './contact.scss';
 import { Title, Button, FormContact } from 'components';
+import { useTranslation } from 'react-i18next';
 import { ReactComponent as PhoneIcon } from "../../assets/icons/receiver.svg";
 import { ReactComponent as LocationIcon } from "../../assets/icons/location.svg";
 import { ReactComponent as EmailIcon } from "../../assets/icons/mail.svg";
-import { useMediaQuery } from 'react-responsive'
+import { Helmet } from 'react-helmet';
+import { useMediaQuery } from 'react-responsive';
 
 
 const Contact = () => {
   const isTabletOrMobileDevice = useMediaQuery({
     query: '(max-device-width: 1224px)'
   })
+  const { t } = useTranslation();
+  const sizeIcon = isTabletOrMobileDevice ? '35' : '50';
 
-  const sizeIcon = isTabletOrMobileDevice ? '35' : '50'
   return (
     <div className="contact container">
+      <Helmet>
+        <title>{t('helmet.contact.title')}</title>
+        <meta name="description" content={t('helmet.contact.description')} />
+      </Helmet>
       <div className="row">
         <div className="col-12 col-md-6">
           <Title tag={"h2"} text={"Kirodues"} />

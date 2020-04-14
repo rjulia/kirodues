@@ -1,6 +1,7 @@
-import _ from 'lodash'
-import React, { useState, useEffect } from 'react'
+import _ from 'lodash';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import './treatment.scss';
 import { useParams } from "react-router-dom";
 import { Spinner, HeroImage, Title } from 'components'
@@ -30,6 +31,10 @@ const Treatment = () => {
   const { imageTreatment, nameTreatment, contentTreatment, priceTreatment, listaPrecios } = treatment.fields
   return (
     <div className="treatment">
+      <Helmet>
+        <title>{nameTreatment}</title>
+        <meta name="description" content={nameTreatment} />
+      </Helmet>
       <div className="container p-0">
         <div className="treatment__image">
           <img

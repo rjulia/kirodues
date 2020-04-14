@@ -2,27 +2,27 @@
   "helmet": {
     "home": {
       "title": "Kirodues - Naturopathy Center",
-      "description": ""
+      "description": " KiroDues Sevilla, nuevo centro de terapias naturales y bienestar "
     },
     "aboutus": {
-      "title": "",
-      "description": ""
+      "title": "Sobre Nosotros",
+      "description": "Descubre un nuevo centro de salud y bienestar en Sevilla"
     },
     "discount_packs": {
-      "title": "",
-      "description": ""
+      "title": "Bonos descuento",
+      "description": "Infórmate de nuestros bonos y packs descuento en drenaje y quiromasaje"
     },
     "treatments": {
-      "title": "",
-      "description": ""
+      "title": "Tratamientos especializados",
+      "description": "Selección de los mejores tratamientos para tu bienestar"
     },
     "collaborators": {
-      "title": "",
-      "description": ""
+      "title": "Colaboradores",
+      "description": "Una red de profesionales al servicio del mejor cuidado personal"
     },
     "contact": {
-      "title": "",
-      "description": ""
+      "title": "Contacta con Nosotros",
+      "description": "Encuentra tu centro más cercano"
     }
   },
   "menu": {

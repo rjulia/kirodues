@@ -26,8 +26,8 @@ const Collaborators = () => {
   return (
     <div className="collaborators">
       <Helmet>
-        <title>Kirodues - Collaboradores</title>
-        <meta name="description" content="EL mejor tratamiento para tu espalda" />
+        <title>{t('helmet.collaborators.title')}</title>
+        <meta name="description" content={t('helmet.collaborators.description')} />
       </Helmet>
       <BlockTitle title={t('collaborators.title')} />
       <div className="container">

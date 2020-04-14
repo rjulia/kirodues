@@ -1,28 +1,28 @@
 {
   "helmet": {
     "home": {
-      "title": "Kirodues - Naturopathy Center",
+      "title": "Kirodues - Centro de Nuropatía",
       "description": ""
     },
-    "aboutus": {
-      "title": "",
-      "description": ""
+    "about_us": {
+      "title": "About Us",
+      "description": "Discover a new health and wellness center in Seville"
     },
     "discount_packs": {
-      "title": "",
-      "description": ""
+      "title": "Discount vouchers",
+      "description": "Find out about our vouchers and discount packs on drainage and chiromassage"
     },
     "treatments": {
-      "title": "",
-      "description": ""
+      "title": "Treatments",
+      "description": "Selection of the best treatments for your well-being"
     },
     "collaborators": {
-      "title": "",
-      "description": ""
+      "title": "Collaborators",
+      "description": "A network of professionals at the service of the best personal care"
     },
     "contact": {
-      "title": "",
-      "description": ""
+      "title": "Contact with Us",
+      "description": "Encuentra tu centro más cercano"
     }
   },
   "menu": {

@@ -1,9 +1,10 @@
-import _ from 'lodash'
-import React, { useState, useEffect } from 'react'
+import _ from 'lodash';
+import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import './treatments.scss';
-import { Spinner, BlockTitle, BoxImage } from 'components'
-import { getTreatments } from '../../services/contenful'
+import { Spinner, BlockTitle, BoxImage } from 'components';
+import { getTreatments } from '../../services/contenful';
 
 const Treatments = () => {
 
@@ -25,6 +26,10 @@ const Treatments = () => {
   if (isLoading) return <Spinner />
   return (
     <div className="treatments">
+      <Helmet>
+        <title>{t('helmet.treatments.title')}</title>
+        <meta name="description" content={t('helmet.treatments.description')} />
+      </Helmet>
       <BlockTitle title={t('discount_pack.title')} subtitle={t('discount_pack.content')} />
       <div className="container">
         <div className="treatments__grid">
