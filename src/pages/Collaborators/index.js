@@ -1,10 +1,10 @@
-import _ from 'lodash'
-import React, { useState, useEffect } from 'react'
+import _ from 'lodash';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 import './collaborators.scss';
-import { Spinner, BlockTitle, BoxImage } from 'components'
-import { getCollaborators } from '../../services/contenful'
+import { Spinner, BlockTitle, BoxImage } from 'components';
+import { getCollaborators } from '../../services/contenful';
 
 const Collaborators = () => {
   const { t, i18n } = useTranslation();

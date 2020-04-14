@@ -90,8 +90,11 @@
     "button_map": "Ver Mapa",
     "first_field": "Nombre (requerido)",
     "second_field": "Email (requerido)",
-    "third_field": "Asunto",
     "fouth_field": "Su mensaje",
-    "button_send": "Enviar"
+    "button_send": "Enviar",
+    "success": "Email se ha enviado satisfactoriamente",
+    "error_name": "El nombre es requerido",
+    "error_email": "Email es requerido y tiene que ser un email valido",
+    "message": "Mensaje es requerido y tiene que tener al menos 30 caractheres"
   }
 }

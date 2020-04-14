@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.form {
+  padding: 70px 35px;
+
+  .errors {
+    min-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .error,
+  .success {
+    font-size: 11px;
+    padding: 2px;
+    font-family: $karla;
+    color: $alert;
+    line-height: 10px;
+    display: block;
+  }
+
+  .success {
+    color: $secondary;
+  }
+}

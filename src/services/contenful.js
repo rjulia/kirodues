@@ -87,4 +87,12 @@ const getLegalStatements = (language, slug) =>
     })
     .then(response => response.items)
 
-export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment, getCollaborators, getCollaborator, getLegalStatements }
+const getAddress = (language) =>
+  client
+    .getEntries({
+      content_type: 'address',
+      locale: language
+    })
+    .then(response => response.items)
+
+export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment, getCollaborators, getCollaborator, getLegalStatements, getAddress }

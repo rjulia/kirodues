@@ -90,8 +90,12 @@
     "button_map": "See Map",
     "first_field": "Name (required)",
     "second_field": "Email (required)",
-    "third_field": "Subject",
-    "fouth_field": "Message",
-    "button_send": "Send"
+    "fouth_field": "Message  (required)",
+    "button_send": "Send",
+    "success": "Email successfully sent!",
+    "error_name": "Name is requiered",
+    "error_email": "Email is requiered and must be a valid email",
+    "error_message": "Message is requiered and must be atleast 30 letters"
+
   }
 }
