@@ -13,8 +13,11 @@ const FormContact = () => {
       'gmail', templateId,
       variables
     ).then(res => {
-      setIsSentSuccesFull()
-      console.log('Email successfully sent!')
+
+      setIsSentSuccesFull(t('contact.success'))
+      setTimeout(() => {
+        setIsSentSuccesFull('')
+      }, 2000);
     })
       // Handle errors here however you like, or use a React error boundary
       .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
