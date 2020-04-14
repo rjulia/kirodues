@@ -23,7 +23,7 @@ const AboutUs = ({ i18n }) => {
         setLoading(false)
       })
 
-  }, [i18n])
+  }, [i18n.language])
 
   if (isLoading) return <Spinner />
   return (

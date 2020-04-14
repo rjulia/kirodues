@@ -22,7 +22,7 @@ const Legal = () => {
       }).finally(() => {
         setLoading(false)
       })
-  }, [i18n, slug])
+  }, [i18n.language, slug])
 
 
   if (isLoading) return <Spinner />

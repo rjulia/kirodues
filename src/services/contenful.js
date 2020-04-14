@@ -45,7 +45,6 @@ const getTreatments = (language) =>
     .getEntries({
       content_type: 'treatment',
       locale: language,
-      order: 'fields.nameTreatment',
       select: 'sys.id,fields.slug,fields.thumbnail,fields.sortTreatment'
     })
     .then(response => response.items)

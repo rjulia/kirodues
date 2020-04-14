@@ -12,7 +12,7 @@ import Es from 'assets/images/es.alt.png';
 
 const Header = () => {
   const { i18n, t } = useTranslation();
-  const [isOpenMenu, setIsOpenMenu] = useState(true)
+  const [isOpenMenu, setIsOpenMenu] = useState(false)
   const [treatments, setTreatments] = useState([])
 
   useEffect(() => {

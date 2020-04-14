@@ -21,7 +21,7 @@ const Treatments = () => {
       }).finally(() => {
         setLoading(false)
       })
-  }, [i18n])
+  }, [i18n.language])
 
   if (isLoading) return <Spinner />
   return (

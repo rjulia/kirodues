@@ -24,7 +24,7 @@ const Collaborator = () => {
       }).finally(() => {
         setLoading(false)
       })
-  }, [i18n, slug])
+  }, [i18n.language, slug])
 
   console.log(collaborator)
   if (isLoading) return <Spinner />
