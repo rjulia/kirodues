@@ -12,7 +12,7 @@ import Es from 'assets/images/es.alt.png';
 
 const Header = () => {
   const { i18n, t } = useTranslation();
-  const [isOpenMenu, setIsOpenMenu] = useState(false)
+  const [isOpenMenu, setIsOpenMenu] = useState(true)
   const [treatments, setTreatments] = useState([])
 
   useEffect(() => {
@@ -24,8 +24,7 @@ const Header = () => {
       }).finally(() => {
 
       })
-  }, [i18n])
-
+  }, [i18n.language])
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
   };
@@ -33,7 +32,6 @@ const Header = () => {
   const toogleMenu = () => {
     setIsOpenMenu(!isOpenMenu)
   }
-  console.log(treatments)
   return (
     <nav className="header__container container-fluid">
 
@@ -91,7 +89,12 @@ const Header = () => {
       <div className="header__menu--burger" onClick={() => toogleMenu()}>
         <IoIosMenu size={44} color={"#22693c"} />
       </div>
-      <HeaderMobile isOpen={isOpenMenu} onToogleMenu={() => toogleMenu()} treatments={treatments} />
+      <HeaderMobile
+        isOpen={isOpenMenu}
+        onToogleMenu={() => toogleMenu()}
+        treatments={treatments}
+        changeLanguage={changeLanguage}
+      />
     </nav>
   )
 }

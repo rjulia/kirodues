@@ -42,12 +42,28 @@
       li {
         display: block;
         margin-bottom: 5px;
-        font-size: 13px;
+        font-size: 14px;
 
         a {
           color: $primary;
         }
+
+        &.frist_level {
+          font-size: 16px;
+
+          >a {
+            color: $secondary;
+          }
+        }
       }
+    }
+  }
+
+  .menu-mobile--language {
+    padding: 0 20px;
+
+    span {
+      margin-right: 15px;
     }
   }
 

@@ -1,53 +1,10 @@
 @import '../../scss/variables';
 
 .contact {
-  padding: 35px 0;
-
-  h2 {
-    margin-bottom: 0px;
-    font-size: 28px;
-    font-weight: 600;
-  }
-
-  h3 {
-    color: $primary;
-    font-size: 18px;
-    line-height: 22px;
-  }
+  padding: 35px 15px;
 
 
-  .contact__box-icons {
-    display: flex;
-    align-items: center;
-    color: $primary;
-    margin: 20px 0;
 
-    p {
-      color: $text_color;
-      font-size: 18px;
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    svg {
-      color: $primary;
-
-      [STROKE*='#']:not(.uk-preserve),
-      [stroke*='#']:not(.uk-preserve) {
-        stroke: currentcolor;
-      }
-    }
-
-    &.email {
-      svg {
-        color: $primary;
-
-        path {
-          fill: currentcolor;
-        }
-      }
-    }
-  }
 
   @include desktop {
     padding: 70px 0;

@@ -17,6 +17,7 @@ const FormContact = () => {
       setIsSentSuccesFull(t('contact.success'))
       setTimeout(() => {
         setIsSentSuccesFull('')
+
       }, 2000);
     })
       // Handle errors here however you like, or use a React error boundary
@@ -41,7 +42,7 @@ const FormContact = () => {
     <div className="col-12 form">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-row">
-          <div className="col-6 form-group">
+          <div className="col-12 col-md-6 form-group">
             <label htmlFor="name">{t('contact.first_field')} *</label>
             <input
               className="form-control"
@@ -52,7 +53,7 @@ const FormContact = () => {
               })}
             />
           </div>
-          <div className="col-6 form-group">
+          <div className="col-12 col-md-6 form-group">
             <label htmlFor="email">{t('contact.second_field')}*</label>
             <input
               className="form-control"
