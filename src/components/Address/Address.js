@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import { useMediaQuery } from 'react-responsive';
 import { Title } from 'components';
 import { ReactComponent as LocationIcon } from "../../assets/icons/location.svg";
@@ -50,8 +50,5 @@ const Address = ({ addressData }) => {
   )
 }
 
-Address.propTypes = {
-
-}
 
 export default Address
