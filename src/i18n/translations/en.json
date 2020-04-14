@@ -1,4 +1,30 @@
 {
+  "helmet": {
+    "home": {
+      "title": "Kirodues - Naturopathy Center",
+      "description": ""
+    },
+    "aboutus": {
+      "title": "",
+      "description": ""
+    },
+    "discount_packs": {
+      "title": "",
+      "description": ""
+    },
+    "treatments": {
+      "title": "",
+      "description": ""
+    },
+    "collaborators": {
+      "title": "",
+      "description": ""
+    },
+    "contact": {
+      "title": "",
+      "description": ""
+    }
+  },
   "menu": {
     "aboutus": "About us",
     "discount_packs": "Discount packs",

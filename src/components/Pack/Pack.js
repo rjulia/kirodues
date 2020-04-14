@@ -1,6 +1,6 @@
-import React from 'react'
-import './Pack.scss'
-import { Title } from 'components'
+import React from 'react';
+import './Pack.scss';
+import { Title } from 'components';
 import PropTypes from 'prop-types';
 
 

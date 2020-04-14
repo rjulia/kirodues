@@ -1,9 +1,9 @@
-import _ from 'lodash'
-import React, { useState, useEffect } from 'react'
+import _ from 'lodash';
+import React, { useState, useEffect } from 'react';
 import { withTranslation, useTranslation } from 'react-i18next';
 import { getReviews } from '../../services/contenful'
 import AboutImg from "../../assets/images/yasmina-pacheco.jpeg";
-import './aboutus.scss'
+import './aboutus.scss';
 import { Title, Spinner, Review } from 'components';
 import { Helmet } from 'react-helmet';
 
@@ -43,14 +43,12 @@ const AboutUs = ({ i18n }) => {
           </div>
         </div>
       </div>
-
       <div className="about__title-reviews">
         <Title tag={'h3'} text={t('about.opinion')} />
       </div>
       <div className="about_content-reviews container">
         {reviews.map(review => (
           <div key={review.sys.id} className="col-12 col-md-3">
-
             <Review
               link={_.get(review, 'fields.urlMedia')}
               imgData={_.get(review, 'fields.logoMedia.fields')}
@@ -58,7 +56,6 @@ const AboutUs = ({ i18n }) => {
           </div>
         ))}
       </div>
-
     </div>
   )
 }

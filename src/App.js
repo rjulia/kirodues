@@ -5,18 +5,16 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { HeaderMobile, MenuMobile, Header, Footer } from "./layout";
+import { HeaderMobile, Header, Footer } from "./layout";
 import { Home, AboutUs, Collaborator, Collaborators, Contact, Treatment, Treatments, NoFound, Packs, Legal } from "./pages";
 
 function App() {
   return (
     <Router>
       <HeaderMobile />
-      <MenuMobile />
       <Header />
       <Suspense fallback="loading">
         <div className='content-wrapper'>
-
           <Switch>
             <Route exact path="/" component={() => <Home />} />
             <Route exact path="/nosotros" component={AboutUs} />
@@ -28,7 +26,6 @@ function App() {
             <Route exact path="/contacto" component={Contact} />
             <Route exact path="/legal/:slug" component={Legal} />
             <Route component={NoFound} />
-
           </Switch>
         </div>
       </Suspense>

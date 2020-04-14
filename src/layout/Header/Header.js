@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { withTranslation, useTranslation } from 'react-i18next';
-import './Header.scss'
-import Logo from "assets/images/kirodues_log-300x113.jpg";
 import { NavLink as Link } from "react-router-dom";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-import En from 'assets/images/en.png'
-import Es from 'assets/images/es.alt.png'
-import { IoIosMenu } from "react-icons/io";
 import { HeaderMobile } from 'layout';
 import { getTreatments } from '../../services/contenful'
+import { IoIosMenu } from "react-icons/io";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import './Header.scss';
+import Logo from "assets/images/kirodues_log-300x113.jpg";
+import En from 'assets/images/en.png';
+import Es from 'assets/images/es.alt.png';
 
 const Header = () => {
   const { i18n, t } = useTranslation();

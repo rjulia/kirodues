@@ -1,6 +1,6 @@
-import React from 'react'
-import './Header-mobile.scss'
-import classNames from 'classnames'
+import React from 'react';
+import './HeaderMobile.scss';
+import classNames from 'classnames';
 import { IoMdClose } from "react-icons/io";
 import { NavLink as Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
