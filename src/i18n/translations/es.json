@@ -1,7 +1,7 @@
 {
   "helmet": {
     "home": {
-      "title": "Kirodues - Naturopathy Center",
+      "title": "Kirodues - Centro de Naturopatía",
       "description": " KiroDues Sevilla, nuevo centro de terapias naturales y bienestar "
     },
     "aboutus": {
@@ -82,7 +82,7 @@
     "price": "Precio Sesión {{value}}€"
   },
   "collaborators": {
-    "title": "Colaboradores"
+    "title": "Equipo de Colaboradores"
   },
   "contact": {
     "title": "KiroDues",
