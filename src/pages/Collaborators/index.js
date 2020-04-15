@@ -36,7 +36,8 @@ const Collaborators = () => {
             collaborators.map(collaborator => (
               <BoxImage
                 key={collaborator.sys.id}
-                title={_.get(collaborator, 'fields.nameCollaborator')}
+                name={_.get(collaborator, 'fields.nameCollaborator')}
+                job={_.get(collaborator, 'fields.jobTitle')}
                 slug={`/colaboradores/${_.get(collaborator, 'fields.slug')}`}
                 thumbnail={_.get(collaborator, 'fields.image.fields')}
               />))

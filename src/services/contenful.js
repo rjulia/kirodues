@@ -63,8 +63,8 @@ const getCollaborators = (language) =>
     .getEntries({
       content_type: 'collaborator',
       locale: language,
-      order: 'fields.nameCollaborator',
-      select: 'sys.id,fields.slug,fields.image,fields.nameCollaborator'
+      order: 'fields.order',
+      select: 'sys.id,fields.slug,fields.image,fields.nameCollaborator,fields.jobTitle'
     })
     .then(response => response.items)
 

@@ -2,6 +2,7 @@
 
 .address__text {
   padding: 20px;
+  margin-bottom: 35px;
 
   h2 {
     margin-bottom: 0px;
@@ -52,6 +53,9 @@
 
 .contact__map {
   display: flex;
+  max-height: 450px;
+  overflow-y: hidden;
+  margin-bottom: 35px;
 }
 
 @include desktop {
