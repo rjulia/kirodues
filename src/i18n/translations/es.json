@@ -68,12 +68,12 @@
   },
   "discount_pack": {
     "title": "Packs con DESCUENTO",
-    "content": "Naturopatia y Wellnes Barcelona",
+    "content": "Naturopatia y Wellnes  en Sevilla - Granada",
     "price": "Precio sin descuento {{value}} €"
   },
   "treaatments": {
     "title": "Tratamientos",
-    "content": "Naturopatia y Wellnes Barcelona",
+    "content": "Naturopatia y Wellnes en Sevilla - Granada",
     "button": "Pack Descuento"
   },
   "treatment": {

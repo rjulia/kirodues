@@ -68,12 +68,12 @@
   },
   "discount_pack": {
     "title": "Discount pack",
-    "content": "Naturopathy and Wellness in Barcelona",
+    "content": "Naturopathy and Wellness in Sevilla - Granada",
     "price": "Total price without discount: {{value}} €"
   },
   "treaatments": {
     "title": "Treatments",
-    "content": "Naturopathy and Wellness in Barcelona",
+    "content": "Naturopathy and Wellness in Sevilla - Granada",
     "button": "Discount Pack"
   },
   "treatment": {
