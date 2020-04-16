@@ -78,7 +78,7 @@ const Header = () => {
         <div className="header__menu--social-media">
           <ul>
             <li>
-              <a href="https://www.facebook.com/KiroDues-1157150637669356/" target="_blank" rel="noopener noreferrer"><FaFacebookF size={15} /></a>
+              <a href="https://www.facebook.com/KiroDues-Sevilla-109337867353126/" target="_blank" rel="noopener noreferrer"><FaFacebookF size={15} /></a>
               <a href="https://twitter.com/KiroDues" target="_blank" rel="noopener noreferrer"><FaTwitter size={15} /></a>
               <a href="https://www.instagram.com/kirodues/" target="_blank" rel="noopener noreferrer"><FaInstagram size={15} /></a>
             </li>
