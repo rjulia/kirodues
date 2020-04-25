@@ -1,24 +1,27 @@
 import _ from 'lodash';
 import React, { useState, useEffect } from 'react';
 import { withTranslation, useTranslation } from 'react-i18next';
-import { getReviews } from '../../services/contenful'
-import AboutImg from "../../assets/images/yasmina-pacheco.jpeg";
+import { getReviews, getAboutUs } from '../../services/contenful'
 import './aboutus.scss';
-import { Title, Spinner, Review } from 'components';
+import { Title, Spinner, Review, FrameImage } from 'components';
 import { Helmet } from 'react-helmet';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const AboutUs = ({ i18n }) => {
 
   const { t } = useTranslation();
   const [reviews, setReviews] = useState([])
+  const [aboutUs, setAboutUS] = useState([])
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
     const promise = getReviews(i18n.language)
+    const promiseAbout = getAboutUs(i18n.language)
     setLoading(true)
-    promise
+    Promise.all([promise, promiseAbout])
       .then(data => {
-        setReviews(data)
+        setReviews(data[0])
+        setAboutUS(data[1])
       }).finally(() => {
         setLoading(false)
       })
@@ -26,6 +29,8 @@ const AboutUs = ({ i18n }) => {
   }, [i18n.language])
 
   if (isLoading) return <Spinner />
+  console.log(aboutUs)
+  const { fields: { title, pictureDwon, pictureUp, content } } = aboutUs
   return (
     <div className="about">
       <Helmet>
@@ -34,12 +39,13 @@ const AboutUs = ({ i18n }) => {
       </Helmet>
       <div className="container">
         <div className="row about__content">
-          <div className="col-12 col-md-8">
-            <Title tag="h2" text={t('about.title')} />
-            <p dangerouslySetInnerHTML={{ __html: t('about.text') }} />
+          <div className="col-12 col-md-7">
+            <Title tag="h2" text={title} />
+            <div className="collaborator__text">{documentToReactComponents(content)}</div>
           </div>
-          <div className="col-12 col-md-4">
-            <img src={AboutImg} alt="nuestro equipo" />
+          <div className="col-12 col-md-5">
+            <FrameImage img={pictureUp.fields.file.url} height={250} />
+            <FrameImage img={pictureDwon.fields.file.url} height={250} />
           </div>
         </div>
       </div>

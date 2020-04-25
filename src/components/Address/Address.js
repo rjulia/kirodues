@@ -8,7 +8,7 @@ import { ReactComponent as PhoneIcon } from "../../assets/icons/receiver.svg";
 
 const Address = ({ addressData }) => {
 
-  const { address, city, name, map, phones } = addressData.fields
+  const { address, city, name, map, phones, email } = addressData.fields
   const isTabletOrMobileDevice = useMediaQuery({
     query: '(max-device-width: 1224px)'
   })
@@ -37,7 +37,7 @@ const Address = ({ addressData }) => {
         <div className="contact__box-icons email">
           <EmailIcon width={sizeIcon} height={sizeIcon} />
           <div className="contact__box-icons--text">
-            <p><a href="mailto:info@kirodues.com">info@kirodues.com</a></p>
+            <p><a href="mailto:info@kirodues.com">{email}</a></p>
           </div>
         </div>
       </div>

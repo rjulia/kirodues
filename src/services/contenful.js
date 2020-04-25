@@ -94,4 +94,13 @@ const getAddress = (language) =>
     })
     .then(response => response.items)
 
-export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment, getCollaborators, getCollaborator, getLegalStatements, getAddress }
+
+const getAboutUs = (language) =>
+  client
+    .getEntries({
+      content_type: 'aboutus',
+      locale: language
+    })
+    .then(response => response.items[0])
+
+export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment, getCollaborators, getCollaborator, getLegalStatements, getAddress, getAboutUs }
