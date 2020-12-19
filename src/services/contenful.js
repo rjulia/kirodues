@@ -103,4 +103,25 @@ const getAboutUs = (language) =>
     })
     .then(response => response.items[0])
 
-export { getComments, getReviews, getPacks, getTreatments, getHomeHero, getTreatment, getCollaborators, getCollaborator, getLegalStatements, getAddress, getAboutUs }
+const getFooter = (language) =>
+    client
+      .getEntries({
+        content_type: 'footer',
+        locale: language
+      })
+      .then(response => response.items[0])
+
+export { 
+  getComments, 
+  getReviews, 
+  getPacks, 
+  getTreatments, 
+  getHomeHero, 
+  getTreatment, 
+  getCollaborators, 
+  getCollaborator, 
+  getLegalStatements, 
+  getAddress,
+  getAboutUs,
+  getFooter,
+ }
